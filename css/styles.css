@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body main{
+    width: 100% ;
+    background-color: rgb(255, 255, 255);
+}
+
+hr {
+    border: 1px solid black;
+}
+
+
+/* HEADER MOBILE*/
+
+header {
+    background: rgb(194,228,198);
+background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1) 41%, rgba(156,227,153,1) 96%);
+
+}
+
+.navbar-toggler {
+    padding: 2px;
+    border: 1px solid transparent;
+}
+
+/* MAIN MOBILE*/
+
+.fotodefondo {
+    background-image: url(../img/220t1600000109cajDC87_R_960_660_R5_D.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh
+}
+
+.h2hotel {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.detalles_h2 {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.contenedorres {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr;
+    font-size: 10px;
+    border: 1px solid transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 30px;
+    background-color: rgba(206, 255, 190, 0.781);
+    margin: 0 2rem 0 2rem;
+    padding: 6px 0 6px 0 ;
+    border-radius: 4px;
+}
+
+.inputubi {
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+
+}
+
+.contenedorres input{
+    margin: 0 10px 0 10px;
+    border-radius: 3px ;
+    border: 1px solid transparent;
+    padding: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+
+}
+
+.gridbot{
+    display: grid;
+    grid-column: span 2;
+    margin: 4px 0 0 0
+    
+}
+
+.botonubi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 0 0 0;
+}
+
+.botondet {
+    padding: 4px 60px 4px 60px;
+    border-radius: 4px;
+    border: 1px solid rgb(228, 227, 227);
+    background-color: #ffffff;
+    font-size: 12px;
+    font-style: italic;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.botondet:hover {
+    color: #6e8b5d;
+}
+
+#rooms {
+    display: block;
+    margin: 20px 0 0 25px;
+    font-style: italic;
+}
+
+#roomhr {
+    display: block;
+    margin: 0 90px 20px 15px;
+}
+
+.rooms-details ul {
+    display: none
+}
+
+.carousel-indicators .active {
+    background-color: #d5ffbc;
+}
+
+#servh3 {
+    display: block;
+    text-align: center;
+    margin: 80px 0 0 0;
+    font-style: italic;
+}
+
+.servhr {
+    display: block;
+    text-align: center;
+    margin: 9px 40px 15px 40px;
+    color: black;
+}
+
+.contenedorserv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 20px;
+    background: rgb(198,198,198);
+    background: radial-gradient(circle, rgba(198,198,198,1) 15%, rgba(225,235,226,1) 51%, rgba(153,153,153,1) 91%);
+    padding: 10px 0 10px 0;
+}
+
+.imgserimg {
+    display: grid;
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.posimg {
+    display: grid;
+    justify-items: end;
+}
+
+.servhr2{
+    display: block;
+    text-align: center;
+    margin: 50px 50px 47px 50px;
+    color: black;
+}
+
+.ubititulo {
+    display: block;
+    border: 1px solid transparent;
+    padding: 10px 0 4px 0;
+    background: rgb(194,228,198);
+background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1) 41%, rgba(156,227,153,1) 96%);
+}
+
+.ubititulo h3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+#hrrev {
+    display: block;
+    margin: 50px 40px 15px 40px;
+    text-align: center;
+}
+
+.reviews h3 {
+    display: none;
+}
+
+.rev {
+    border: 1px solid rgb(129, 129, 129);
+    padding: 1rem;
+    margin: 40px 50px 40px 50px ;
+    border-radius: 5px;
+}
+
+.rev h4 {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(37, 37, 37);
+    font-style: italic;
+    padding: 20px 0 0 0;
+}
+
+#pstar {
+    text-align: center;
+    font-size: 30px;
+    color: #a7ca93;
+    padding: 0;
+}
+
+.rev p {
+    font-size: 13px;
+    padding: 8px 10px 0 10px;
+    text-align: center;
+}
+
+#abouth3 {
+    display: block;
+    margin: 20px 0 0 25px;
+    font-style: italic;
+}
+
+#abouthr {
+    display: block;
+    margin: 7px 110px 10px 5px;
+}
+
+.aboutusconteiner {
+    display: block;
+    background: rgb(194,228,198);
+background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1) 41%, rgba(156,227,153,1) 96%);
+    border: 1px solid rgba(198, 198, 198, 0);
+    padding: 25px ;
+    margin: 110px 0 0 0 ;
+}
+
+.ytvd {
+    display: flex
+}
+
+.video {
+    position: relative;
+    bottom: 160px;
+    padding: 30px;
+}
+
+.abouthr2 {
+    display: block;
+    margin: -160px 5px 0 110px
+}
+
+@media (min-width: 1200px) {
+
+    .fotodefondo {
+        height: 80vh
+    }
+
+    .h2hotel {
+        padding-top: 13rem;
+    }
+
+    .detalles_h2 {
+        font-size: 45px ;
+        font-style: italic;
+    }
+
+    .contenedorres {
+        display: flex;
+        padding: 20px 0 20px 0;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .inputubi {
+        font-size: 15px;
+        margin: 3px 0 0 80px;
+    
+    }
+    
+    .contenedorres input{
+        margin: 0 35px 0 25px;
+        padding: 4px 13px 4px 13px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-style: italic;
+    }
+    
+    .gridbot{
+        display: flex;
+    }
+    
+    .botonubi {
+        margin: 0 80px 0 0;
+    }
+    
+    .botondet {
+        padding: 4px 100px 4px 100px;
+        border-radius: 4px;
+        border: 1px solid rgb(228, 227, 227);
+        background-color: #ffffff;
+        font-size: 15px;
+        font-style: italic;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .botondet:hover {
+        color: #6e8b5d;
+    }
+}
+
+
+
+
+
+
+/*MOBILE FOOTER*/
+
+footer {
+    display: grid;
+    margin: 40px 0 10px 0;
+    background: rgb(194,228,198);
+    background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1) 41%, rgba(156,227,153,1) 96%); 
+    width: 100%;
+    padding: 8px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+}
+
+footer h4 {
+    display: grid;
+    font-size: 12px;
+    margin: 0 0 5px 30px;
+}
+
+footer ul {
+    display: grid;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.contactofoot {
+    display: grid;
+    margin: 20px 0 0 0;
+    align-self: center;
+}
+
+.redesocfoot {
+    display: grid;
+    justify-self: start;
+}
+
+footer img {
+    width: 30%;
+    position: relative;
+    left: 65px;
+    top: 10px;
+}
+
+/*VERSION MOBILE ROOM MAIN*/
+
+h1 {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    margin: 40px 0 0 0;
+    color: #829c72;
+}
+
+.selectorhabitacion {
+    display:block;
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+#detallesselector {
+    padding: 5px 30px 5px 30px;
+    text-align: center;
+    color: black;
+    border-radius: 2px;
+}
+
+.opcion_sel {
+    text-align: start;
+}
+
+.contenedorimgroom {
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 30px 0 30px 0;
+    margin: 0 21px 0 21px;
+    border-radius: 4px;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 11%, rgba(208,226,201,1) 46%, rgba(208,226,201,1) 53%, rgba(255,255,255,1) 84%);
+}
+
+.imagenroomdetalles {
+    max-width: 300px;
+    max-height: 216px;
+    padding: 4px;
+    border: 1px solid transparent;
+    margin: 10px 0 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
