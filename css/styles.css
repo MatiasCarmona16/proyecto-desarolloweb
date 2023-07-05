@@ -15,8 +15,8 @@ a {
 }
 
 body main{
-    width: 100% ;
-    background-color: rgb(255, 255, 255);
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 26%, rgba(237,250,230,1) 48%, rgba(237,250,230,1) 50%, rgba(255,255,255,1) 70%);
 }
 
 hr {
@@ -24,7 +24,7 @@ hr {
 }
 
 
-/* HEADER MOBILE*/
+/* -------------HEADER MOBILE--------------*/
 
 header {
     background: rgb(194,228,198);
@@ -37,7 +37,7 @@ background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1)
     border: 1px solid transparent;
 }
 
-/* MAIN MOBILE*/
+/* -------------------MAIN MOBILE--------------------*/
 
 .fotodefondo {
     background-image: url(../img/220t1600000109cajDC87_R_960_660_R5_D.webp);
@@ -55,6 +55,7 @@ background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1)
 .detalles_h2 {
     font-size: 25px;
     font-style: italic;
+    font-weight: 300;
 }
 
 .contenedorres {
@@ -117,18 +118,19 @@ background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1)
     color: #6e8b5d;
 }
 
-#rooms {
+#rooms h3 {
     display: block;
     margin: 20px 0 0 25px;
     font-style: italic;
+    font-weight: 100
 }
 
 #roomhr {
     display: block;
-    margin: 0 90px 20px 15px;
+    margin: 10px 90px 20px 15px;
 }
 
-.rooms-details ul {
+.seccionroomsdesktop {
     display: none
 }
 
@@ -141,6 +143,7 @@ background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1)
     text-align: center;
     margin: 80px 0 0 0;
     font-style: italic;
+    font-weight: 100;
 }
 
 .servhr {
@@ -155,8 +158,8 @@ background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1)
     grid-template-columns: 1fr 1fr;
     row-gap: 15px;
     column-gap: 20px;
-    background: rgb(198,198,198);
-    background: radial-gradient(circle, rgba(198,198,198,1) 15%, rgba(225,235,226,1) 51%, rgba(153,153,153,1) 91%);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 11%, rgba(221,221,221,1) 19%, rgba(204,231,189,1) 49%, rgba(255,255,255,1) 89%);
     padding: 10px 0 10px 0;
 }
 
@@ -167,6 +170,7 @@ background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1)
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
+    
 }
 
 .posimg {
@@ -237,6 +241,7 @@ background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1)
     display: block;
     margin: 20px 0 0 25px;
     font-style: italic;
+    font-weight: 100;
 }
 
 #abouthr {
@@ -268,70 +273,7 @@ background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1)
     margin: -160px 5px 0 110px
 }
 
-@media (min-width: 1200px) {
-
-    .fotodefondo {
-        height: 80vh
-    }
-
-    .h2hotel {
-        padding-top: 13rem;
-    }
-
-    .detalles_h2 {
-        font-size: 45px ;
-        font-style: italic;
-    }
-
-    .contenedorres {
-        display: flex;
-        padding: 20px 0 20px 0;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .inputubi {
-        font-size: 15px;
-        margin: 3px 0 0 80px;
-    
-    }
-    
-    .contenedorres input{
-        margin: 0 35px 0 25px;
-        padding: 4px 13px 4px 13px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        font-style: italic;
-    }
-    
-    .gridbot{
-        display: flex;
-    }
-    
-    .botonubi {
-        margin: 0 80px 0 0;
-    }
-    
-    .botondet {
-        padding: 4px 100px 4px 100px;
-        border-radius: 4px;
-        border: 1px solid rgb(228, 227, 227);
-        background-color: #ffffff;
-        font-size: 15px;
-        font-style: italic;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    
-    .botondet:hover {
-        color: #6e8b5d;
-    }
-}
-
-
-
-
-
-
-/*MOBILE FOOTER*/
+/*-----------------------MOBILE FOOTER--------------------*/
 
 footer {
     display: grid;
@@ -374,7 +316,219 @@ footer img {
     top: 10px;
 }
 
-/*VERSION MOBILE ROOM MAIN*/
+
+/*-------------------INDEX FOTO Y RESERVAS DESKTOP-------------*/
+
+@media (min-width: 1200px) {
+
+    .fotodefondo {
+        height: 87vh
+    }
+
+    .h2hotel {
+        padding-top: 13rem;
+    }
+
+    .detalles_h2 {
+        font-size: 45px ;
+        font-style: italic;
+    }
+
+    .contenedorres {
+        display: flex;
+        padding: 20px 0 20px 0;
+        justify-content: space-around;
+        align-items: center;
+        bottom: 50px;
+    }
+    
+    .inputubi {
+        font-size: 15px;
+        margin: 3px 0 0 80px;
+    
+    }
+    
+    .contenedorres input{
+        margin: 0 35px 0 25px;
+        padding: 4px 13px 4px 13px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        font-style: italic;
+    }
+    
+    .gridbot{
+        display: flex;
+    }
+    
+    .botonubi {
+        margin: 0 80px 0 0;
+    }
+    
+    .botondet {
+        padding: 4px 100px 4px 100px;
+        border-radius: 4px;
+        border: 1px solid rgb(228, 227, 227);
+        background-color: #ffffff;
+        font-size: 15px;
+        font-style: italic;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .botondet:hover {
+        color: #6e8b5d;
+    }
+
+
+    /*----------------INDEX MAIN ROOM DESKTOP--------------------*/
+
+    #rooms h3 {
+        font-size: 35px;
+        margin: 0 0 5px 40px;
+    }
+
+    .seccionrooms {
+        display: none;
+    }
+
+    .seccionroomsdesktop {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 60px 0 0 0;
+    }
+
+    .rooms-details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+    }
+    
+    .rooms-details img {
+        height: 230px;
+        width: 350px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+        border-radius: 4px;
+    }
+
+    @media (min-width: 1600px) {
+        .rooms-details img {
+            height: 300px;
+            width: 450px;
+        }
+    }
+    
+    .ul-room li {
+        display: none;
+        font-size: 14px;
+        font-weight: 50px;
+        line-height: 20px;
+    }
+    /*------------------SERVICES MAIN DESKTOP-------------------*/
+    #servh3 {
+        margin: 130px 0 0 0;
+        font-size: 35px;
+    }
+
+    .contenedorserv {
+        row-gap: 25px;
+        margin: 30px 0 0 0;
+        column-gap: 150px;
+        background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 26%, rgba(237,250,230,1) 48%, rgba(237,250,230,1) 50%, rgba(255,255,255,1) 70%);;
+    }
+    
+    .imgserimg {
+        max-width: 400px;
+        height: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    /*---------------UBICACION MAIN DESKTOP----------------------*/
+
+    .tituloyubicacion {
+        display: flex;
+        width: 100%;
+        margin: 100px 0 100px 0;
+    }
+
+    .ubititulo {
+        border: 1px solid transparent;
+        padding: 50px 0 50px 0;
+        width: 100%;
+        background: rgb(194,228,198);
+    background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1) 41%, rgba(156,227,153,1) 96%);
+    }
+    
+    .ubititulo h3 {
+        font-size: 25px;
+        font-style: italic;
+        font-weight: 300;
+        text-align: center;
+        line-height: 5
+    }
+
+    .googlemap {
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .googlemap iframe {
+        width: 600px;
+        height: 250px;
+    }
+
+/* ----------------REVIEWS MAIN DESKTOP----------------------*/
+
+.reviews h3 {
+    display: block;
+    text-align: center;
+    margin: 70px 0 0 0;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.flexreview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rev {
+    border: 1px solid rgb(129, 129, 129);
+    padding: 2rem;
+    margin: 40px 400px 40px 400px ;
+    width: 450px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff6c;
+}
+
+.rev h4 {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(37, 37, 37);
+    font-style: italic;
+    padding: 20px 0 0 0;
+}
+
+#pstar {
+    text-align: center;
+    font-size: 50px;
+    color: #a7ca93;
+    padding: 0;
+}
+
+.rev p {
+    font-size: 16px;
+    padding: 8px 10px 0 10px;
+    text-align: center;
+}
+
+}
+
+/*-------------------VERSION MOBILE "PAGE ROOM" MAIN----------------------*/
 
 h1 {
     display: block;
