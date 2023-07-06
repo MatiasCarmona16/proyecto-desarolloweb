@@ -268,6 +268,10 @@ background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1)
     padding: 30px;
 }
 
+.aboutusconteiner p{
+    display: none
+}
+
 .abouthr2 {
     display: block;
     margin: -160px 5px 0 110px
@@ -277,7 +281,7 @@ background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1)
 
 footer {
     display: grid;
-    margin: 40px 0 10px 0;
+    margin: 0px 0 10px 0;
     background: rgb(194,228,198);
     background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1) 41%, rgba(156,227,153,1) 96%); 
     width: 100%;
@@ -433,8 +437,9 @@ footer img {
         row-gap: 25px;
         margin: 30px 0 0 0;
         column-gap: 150px;
-        background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,1) 26%, rgba(237,250,230,1) 48%, rgba(237,250,230,1) 50%, rgba(255,255,255,1) 70%);;
+        background: rgb(199,232,179);
+    background: radial-gradient(circle, rgba(199,232,179,1) 25%, rgba(255,255,255,1) 60%);
+    padding: 0;
     }
     
     .imgserimg {
@@ -526,6 +531,43 @@ background: linear-gradient(90deg, rgba(255,255,255,1) 26%, rgba(237,250,230,1) 
     text-align: center;
 }
 
+/*-------------------ABOUT US MAIN DESKTOP--------------------*/
+.aboutusconteiner {
+    padding: 90px ;
+}
+
+#abouth3 {
+margin: 100px 0 0 70px;
+font-size: 35px;
+}
+
+.aboutusconteiner p{
+    display: block;
+    text-align: right;
+    font-size: 25px;
+    padding: 0 130px 0 0;
+    font-weight: 200;
+}
+
+.video {
+    position: relative;
+    bottom: 320px;
+    padding: 30px;
+    left: 90px;
+}
+
+.video-aboutus {
+    width: 50%;
+    
+}
+
+.video-aboutus iframe {
+    height: 400px;
+}
+
+.abouthr2 {
+    margin: -300px 5px 150px 110px
+}
 }
 
 /*-------------------VERSION MOBILE "PAGE ROOM" MAIN----------------------*/
