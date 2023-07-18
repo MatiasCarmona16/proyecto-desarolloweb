@@ -14,13 +14,17 @@ a {
     color: inherit;
 }
 
-body main{
+#pagina_index{
     background: rgb(255,255,255);
 background: linear-gradient(90deg, rgba(255,255,255,1) 26%, rgba(237,250,230,1) 48%, rgba(237,250,230,1) 50%, rgba(255,255,255,1) 70%);
 }
 
+#pagina_rooms {
+    background-color: white;
+}
+
 hr {
-    border: 1px solid black;
+    border: 1px solid;
 }
 
 
@@ -498,7 +502,8 @@ background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1)
 
 .abouthr2 {
     display: block;
-    margin: -160px 5px 0 110px
+    margin: -160px 5px 0 110px;
+    color: white;
 }
 
 @media (min-width: 1200px) {
@@ -536,7 +541,8 @@ font-size: 35px;
 }
 
 .abouthr2 {
-    margin: -300px 5px 150px 110px
+    margin: -300px 5px 150px 110px;
+    color: black;
 }
 }
 
@@ -636,7 +642,7 @@ footer img {
 }
 
 
-/*-------------------VERSION MOBILE "PAGE ROOM" MAIN----------------------*/
+/*-------------------VERSION MOBILE Y DESKTOP "PAGE ROOM" MAIN----------------------*/
 
 h1 {
     display: block;
@@ -704,4 +710,179 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 11%, rgba(208,226,201,1)
     .contenedor_imagenes-room {
         width: 1000px;
 }
+}
+
+
+/*-------------------VERSION MOBILE "PAGE SERVICES" MAIN----------------------*/
+
+.titulo_principal {
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+.titulo_principal h2 {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 400;
+    color: #829c72 ;
+}
+
+.titulo_principal hr {
+    margin: 0 40px 45px 40px;
+    height: 5px;
+    background-color: #829c72;
+    color: #829c72;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenido_secundario-gym h3 {
+    text-align: center;
+    background: rgb(194,228,198);
+    background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1) 41%, rgba(156,227,153,1) 96%);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*Restaurant*/
+
+.contenido_secundario-restaurant h3 {
+    text-align: center;
+    background: rgb(194,228,198);
+    background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1) 41%, rgba(156,227,153,1) 96%);
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    margin: 80px 0 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenido_secundario-restaurant-primer-div {
+    display: flex;
+    background-color:#bcdfa8;
+    width: 100%;
+    height: 55px;
+    margin: 125px 0 0 0;
+    padding: 10px;
+}
+
+.contenido_secundario-restaurant-primer-div img {
+    width: 250px;
+    height: 150px;
+    position: relative;
+    bottom: 105px;
+    padding: 5px;
+    background-color: #bcdfa8;
+}
+
+.contenido_secundario-restaurant-primer-div a {
+    border: 1px solid rgb(54, 54, 54);
+    font-size: 11px;
+    padding: 6px 5px 0 5px;
+    margin: 0 0 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+}
+
+.contenido_secundario-restaurant-primer-div a:hover{
+    background-color: #6e8b5d;
+    color: white;
+}
+
+.contenido_secundario-restaurant-segundo-div {
+    display: flex;
+    background-color:#bcdfa8;
+    width: 100%;
+    height: 60px;
+    margin: 0 0 125px 0;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenido_secundario-restaurant-segundo-div img {
+    width: 150px;
+    height: 130px;
+    position: relative;
+    bottom: 1px;
+    margin: 0 0 0 25px;
+    padding: 5px;
+    background-color: #bcdfa8;
+}
+
+/*Eventos*/
+
+.contenido_secundario-events h3 {
+    display: block;
+    margin: 150px 0 0 40px ;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.contenido_secundario-events hr {
+    display: block;
+    height: 10px;
+    margin: 3px 90px 10px 10px;
+    background-color: #a7ca93 ;
+    color: #a7ca93;
+}
+
+#hr_event_segundo {
+    display: block;
+    height: 10px;
+    margin: 10px 10px 0 90px;
+    background-color: #a7ca93;
+    color: #a7ca93;
+}
+
+/*PILETA*/
+
+
+.contenido_secundario-ourpool h3 {
+    text-align: center;
+    margin: 50px 0 0 0 ;
+    font-size: 19px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.contenido_secundario-ourpool-contenedor-imagenes{
+    display: block;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid rgba(116, 116, 116, 0.288);
+    margin: 20px 15px 0 15px;
+    padding: 15px 0 40px 0;
+    background: rgb(199,232,179);
+    background: radial-gradient(circle, rgba(199,232,179,1) 13%, rgba(255,255,255,1) 66%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.contenido_secundario-ourpool img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contenedor-imagenes-imagengrande {
+    width: 320px;
+    height: 230px;
+    margin: 0 0 60px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*imagen final logo*/
+
+.imagen_final-logo {
+    display: block;
+    text-align: center;
+}
+
+.imagen_final-logo img {
+    width: 130px;
+    height: 100px;
 }
