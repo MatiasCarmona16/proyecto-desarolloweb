@@ -1436,6 +1436,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 6%, rgba(204,234,186,0.9
     height: 130px;
     border-radius: 5px;
     border-top-left-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .contenedor-informacion-contactus p {
@@ -1448,8 +1449,19 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 6%, rgba(204,234,186,0.9
 @media (min-width: 1200px) {
     .section-informacion {
         width: 75%;
-        margin: 70px 0 50px 0;
+        margin: 80px 0 50px 0;
+        height: 200px;
     }
+
+    .contenedor-informacion-contactus {
+        margin: 30px 20px 0 20px;
+        height: 200px;
+        padding: 40px 0px 0 10px;
+    }
+
+    .contenedor-informacion-contactus p {
+        font-size: 17px;
+}
 }
 
 
@@ -1495,6 +1507,7 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 6%, rgba(204,234,186,0.9
     margin: 0 20px 0 20px;
     border-radius: 5px;
     border-top-left-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .contenedor-formulario-contactus h3 {
@@ -1547,5 +1560,29 @@ background-color: #6e8b5d;
 
     .contenedor_mapa-contactus hr {
         display: none;
+    }
+}
+
+/*fotofondo*/
+
+.imagen_final-logo-mobile {
+    display: block;
+    text-align: center;
+}
+
+.imagen_final-logo-desktop {
+    display: none;
+}
+
+.imagen_final-logo-mobile img {
+    width: 130px;
+    height: 100px;
+}
+
+@media(min-width:1200px) {
+
+    .imagen_final-logo-mobile img {
+        width: 200px;
+        height: 170px;
     }
 }
