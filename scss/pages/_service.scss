@@ -1,0 +1,395 @@
+/* Variables */
+$primary-font: 'Arial', sans-serif;
+$secondary-font: 'Helvetica', sans-serif;
+$primary-color: #829c72;
+$secondary-color: #a7ca93;
+$background-color-1: rgba(255,255,255,0.7805497198879552);
+$background-color-2: rgba(199,232,179,0.6825105042016807);
+$background-color-3: rgba(199,232,179,0.5256477591036415);
+$background-color-4: rgba(255,255,255,0.7861519607843137);
+
+#body_service_background {
+    background: rgb(199,232,179);
+    background: linear-gradient(180deg, rgba(199,232,179,0.6825105042016807) 3%, rgba(255,255,255,0.7805497198879552) 8%, rgba(255,255,255,0.7861519607843137) 83%, rgba(199,232,179,0.5256477591036415) 87%);
+  }
+
+/*-------------------VERSION MOBILE Y DESKTOP "PAGE SERVICES"----------------------*/
+
+/*-------------------VERSION MOBILE Y DESKTOP TITULO PRINCIPAL PAGE SERVICES------------------*/
+
+.titulo_principal {
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+.titulo_principal h2 {
+    font-size: 25px;
+    font-style: italic;
+    color: $primary-color;
+}
+
+.titulo_principal hr {
+    margin: 0 60px 45px 60px;
+    height: 5px;
+    background-color: $primary-color;
+    color: $primary-color;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+@media (min-width: 1200px) {
+    .titulo_principal {
+        margin: 100px 0 0 0;
+    }
+
+    .titulo_principal h2 {
+        font-size: 35px;
+    }
+
+    .titulo_principal hr {
+        margin: 0 500px 60px 500px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .titulo_principal hr {
+        margin: 0 700px 60px 700px;
+    }
+}
+
+/*-------------------CONTENIDO SECUNDARIO PAGE SERVICE: GYM VERSION MOBILE Y DESKTOP------------------*/
+
+.contenido_secundario-gym {
+    background: $background-color-1;
+    background: linear-gradient(180deg, $background-color-1 25%, $background-color-2 64%, $background-color-3 96%, $background-color-4 99%);
+}
+
+.contenido_secundario-gym h3 {
+    text-align: center;
+    background: radial-gradient(circle, $secondary-color 15%, $secondary-color 41%, darken($secondary-color, 10%) 96%);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 6px;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+}
+
+.contenido_secundario-gym img {
+    width: 350px;
+    height: 230px;
+}
+
+@media (min-width: 1200px) {
+    .contenido_secundario-gym h3 {
+        font-size: 25px;
+        padding: 12px;
+    }
+
+    .contenido_secundario-gym img{
+        width: 480px;
+        height: 330px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .contenido_secundario-gym img {
+        width: 680px;
+        height: 450px;
+    }
+}
+
+/*------------CONTENIDO SECUNDARIO PAGE SERVICE: RESTAURANT VERSION MOBILE Y DESKTOP-------------*/
+
+.contenido_secundario-restaurant h3 {
+    text-align: center;
+    background: radial-gradient(circle, $secondary-color 15%, $secondary-color 41%, darken($secondary-color, 10%) 96%);
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    margin: 80px 0 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 6px;
+    color: #ffffff;
+}
+
+.contenido_secundario-restaurant-primer-div {
+    display: flex;
+    background: radial-gradient(circle, $secondary-color 15%, $secondary-color 41%, darken($secondary-color, 10%) 96%);
+    width: 100%;
+    height: 55px;
+    margin: 125px 0 0 0;
+    padding: 10px;
+}
+
+.contenido_secundario-restaurant-primer-div img {
+    width: 250px;
+    height: 150px;
+    position: relative;
+    bottom: 105px;
+    padding: 5px;
+    background: $secondary-color;
+    border-radius: 10px;
+}
+
+.contenido_secundario-restaurant-primer-div a {
+    border: 1px solid #ffffff;
+    font-size: 10px;
+    padding: 5px 5px 3px 5px;
+    margin: 0 0 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+    color: #ffffff;
+}
+
+.contenido_secundario-restaurant-primer-div a:hover{
+    background-color: darken($secondary-color, 10%);
+    color: white;
+}
+
+.contenido_secundario-restaurant-segundo-div {
+    display: flex;
+    background: radial-gradient(circle, $secondary-color 15%, $secondary-color 41%, darken($secondary-color, 10%) 96%);
+    width: 100%;
+    height: 60px;
+    margin: 0 0 125px 0;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenido_secundario-restaurant-segundo-div img {
+    width: 150px;
+    height: 130px;
+    position: relative;
+    bottom: 1px;
+    margin: 0 0 0 25px;
+    padding: 5px;
+    background: $secondary-color;
+    border-radius: 10px;
+}
+
+#imagen_comida_desktop {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .contenido_secundario-restaurant h3 {
+        font-size: 25px;
+        padding: 12px;
+    }
+
+    .contenido_secundario-restaurant-primer-div {
+        height: 180px;
+        margin: 150px 0 80px 0;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .contenido_secundario-restaurant-primer-div img {
+        width: 480px;
+        height: 280px;
+        bottom: 110px;
+        left: 110px;
+    }
+
+    .contenido_secundario-restaurant-primer-div a {
+        font-size: 18px;
+        padding: 45px 20px 3px 20px;
+        margin: 20px 0 20px 365px; 
+    }
+
+    .contenido_secundario-restaurant-segundo-div {
+        height: 80px;
+        margin: 0;
+        justify-content: space-evenly;
+    }
+
+    .contenido_secundario-restaurant-segundo-div img {
+        width: 250px;
+        height: 200px;
+        margin: 0;
+    }
+
+    #imagen_comida_desktop {
+        display: flex;
+    }
+}
+
+@media (min-width: 1500px) {
+    .contenido_secundario-restaurant-primer-div {
+        margin: 270px 0 80px 0;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .contenido_secundario-restaurant-primer-div img {
+        left: 250px;
+        width: 50%;
+        height: 410px;
+        bottom: 240px;
+    }
+
+    .contenido_secundario-restaurant-segundo-div img {
+        width: 25%;
+        height: 270px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .contenido_secundario-restaurant-primer-div a {
+        margin: 20px 0 20px 500px; 
+    }
+}
+
+/*-----------------CONTENIDO SECUNDARIO PAGE SERVICE: EVENTS VERSION MOBILE Y DESKTOP---------------*/
+
+.contenido_secundario-events {
+    background: $background-color-1;
+    background: linear-gradient(180deg, $background-color-1 6%, $background-color-2 11%, $background-color-3 93%, $background-color-4 97%);
+}
+
+.contenido_secundario-events h3 {
+    display: block;
+    margin: 150px 0 0 40px ;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.contenido_secundario-events hr {
+    display: block;
+    height: 10px;
+    margin: 3px 90px 10px 10px;
+    background-color: $secondary-color;
+    color: $secondary-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#hr_event_segundo {
+    display: block;
+    height: 10px;
+    margin: 10px 10px 0 90px;
+    background-color: $secondary-color;
+    color: $secondary-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contenido_secundario-events img {
+    width: 350px;
+    height: 230px;
+}
+
+@media (min-width: 1200px) {
+    .contenido_secundario-events img {
+        width: 490px;
+        height: 330px;
+        margin: 30px 0 30px 0;
+    }
+
+    .contenido_secundario-events h3 {
+        margin: 350px 0 10px 40px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .contenido_secundario-events hr {
+        margin: 3px 220px 10px 10px;
+    }
+
+    #hr_event_segundo {
+        margin: 10px 10px 0 220px;
+    }
+}
+
+@media (min-width: 1500px){
+    .contenido_secundario-events img {
+        width: 680px;
+        height: 450px;
+    }
+}
+
+/*------------CONTENIDO SECUNDARIO PAGE SERVICE: POOL VERSION MOBILE Y DESKTOP---------------*/
+
+.contenido_secundario-ourpool h3 {
+    text-align: center;
+    margin: 50px 40px 0 40px ;
+    font-size: 19px;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 2px solid $secondary-color;
+    border-radius: 10px;
+}
+
+.contenido_secundario-ourpool-contenedor-imagenes{
+    display: block;
+    text-align: center;
+    border: 1px solid rgba(116, 116, 116, 0.288);
+    margin: 15px 15px 0 15px;
+    padding: 15px 0 40px 0;
+    background: $secondary-color;
+    background: radial-gradient(circle, $secondary-color 13%, $background-color-4 66%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.contenido_secundario-ourpool img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contenido-imagenes-imagengrande {
+    width: 320px;
+    height: 230px;
+    margin: 0 0 60px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 1200px) {
+    .contenido_secundario-ourpool h3 {
+        font-size: 25px;
+        margin: 100px 400px 0 400px ;
+        border-bottom: 2px solid $secondary-color;
+        border-radius: 10px;
+    }
+
+    .contenido_secundario-ourpool img {
+        width: 37%;
+        height: 350px;
+        margin: 40px 0 40px 40px;
+    }
+
+    #contenido-imagenes-imagengrande {
+        width: 37%;
+        height: 350px;
+        margin: 40px 40px 40px 0;
+    }
+}
+
+/*-------------CONTENIDO SECUNDARIO PAGE SERVICE: FOTO FINAL VERSION MOBILE Y DESKTOP----------------*/
+
+.imagen_final-logo {
+    display: block;
+    text-align: center;
+}
+
+.imagen_final-logo img {
+    width: 130px;
+    height: 100px;
+}
+
+@media(min-width:1200px) {
+    .imagen_final-logo{
+        margin: 20px 0 20px 0;
+    }
+
+    .imagen_final-logo img {
+        width: 180px;
+        height: 150px;
+    }
+}

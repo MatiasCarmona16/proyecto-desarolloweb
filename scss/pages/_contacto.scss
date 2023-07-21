@@ -1,0 +1,225 @@
+
+/* Variables para fuentes*/
+$font-family: 'Arial', sans-serif;
+$font-size-small: 14px;
+$font-size-medium: 17px;
+$font-size-large: 25px;
+
+/* Variables para colores*/
+$color-green: #829c72;
+$color-info-text: white;
+$color-map-label: #829c72;
+$color-submit-hover: #6e8b5d;
+
+/* Variables para colores de fondo*/
+$color-bg-gradient-from: rgba(255, 255, 255, 1);
+$color-bg-gradient-to: rgba(255, 255, 255, 0.95);
+$color-bg-info-from: rgba(199, 232, 179, 0.91);
+$color-bg-info-to: rgba(255, 255, 255, 1);
+$color-bg-form-from: rgba(199, 232, 179, 0.91);
+$color-bg-form-to: rgba(255, 255, 255, 1);
+$color-submit-bg-from: rgb(194, 228, 198);
+$color-submit-bg-to: rgba(156, 227, 153, 1);
+$color-submit-border: white;
+
+#body_contactus_background {
+    background: rgb(204,234,186);
+  background: linear-gradient(180deg, rgba(204,234,186,0.9220063025210083) 4%, rgba(255,255,255,1) 23%, rgba(255,255,255,1) 67%, rgba(199,232,179,0.9108018207282913) 81%);
+  }
+
+/*-------------------VERSION MOBILE Y DESKTOP "PAGE CONTACT US"----------------------*/
+
+/*-----------------TITULO PRINCIPAL DESKTOP Y MOBILE CONTACT US------------------*/
+
+.titulo_principal-contactus {
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+.titulo_principal-contactus h2 {
+    font-size: $font-size-large;
+    font-style: italic;
+    color: $color-green;
+}
+
+.titulo_principal-contactus hr {
+    margin: 0 60px 40px 60px;
+}
+
+@media (min-width: 1200px) {
+    .titulo_principal-contactus {
+        margin: 90px 0 0 0;
+    }
+
+    .titulo_principal-contactus hr {
+        margin: 0 400px 40px 400px;
+    }
+
+    .flexbox-contactus {
+        display: flex;
+    }
+}
+
+/*----------------SECCION DE INFORMACION MOBILE Y DESKTOP CONTACT US---------------*/
+
+.section-informacion {
+    width: 100%;
+    height: 110px;
+    background: linear-gradient(180deg, $color-bg-gradient-from 6%, $color-bg-info-from 17%, $color-bg-info-to 80%, $color-bg-gradient-to 95%);
+    text-align: start;
+    margin: 0 0 50px 0;
+}
+
+.contenedor-informacion-contactus {
+    position: relative;
+    bottom: 10px;
+    background-color: rgba(166, 199, 146, 0.78);
+    padding: 20px 0px 0 10px;
+    margin: 0 20px 0 20px;
+    height: 130px;
+    border-radius: 5px;
+    border-top-left-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor-informacion-contactus p {
+    font-size: $font-size-small;
+    margin-bottom: 8px;
+    font-weight: 300;
+    color: $color-info-text;
+}
+
+@media (min-width: 1200px) {
+    .section-informacion {
+        width: 75%;
+        margin: 80px 0 50px 0;
+        height: 200px;
+    }
+
+    .contenedor-informacion-contactus {
+        margin: 30px 20px 0 20px;
+        height: 200px;
+        padding: 40px 0px 0 10px;
+    }
+
+    .contenedor-informacion-contactus p {
+        font-size: $font-size-medium;
+    }
+}
+
+/*----------------SECCION DE MAPA MOBILE Y DESKTOP CONTACT US---------------*/
+
+.contenedor_mapa-contactus hr {
+    margin: 30px 50px 0 50px;
+    color: $color-map-label;
+}
+
+#mapa-contactus-desktop {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    #mapa-contactus-desktop {
+        display: inline-block;
+        margin: 0 0 60px 0;
+    }
+
+    #mapa-contactus-mobile {
+        display: none;
+    }
+}
+
+/*----------------SECCION DE FORMULARIO MOBILE Y DESKTOP CONTACT US---------------*/
+
+.section-formulario {
+    height: 300px;
+    background: linear-gradient(180deg, $color-bg-gradient-from 6%, $color-bg-form-from 17%, $color-bg-form-to 80%, $color-bg-gradient-to 95%);
+    margin: 70px 0 85px 0;
+}
+
+.contenedor-formulario-contactus {
+    display: block;
+    position: relative;
+    bottom: 40px;
+    height: 420px;
+    background-color: rgba(166, 199, 146, 0.78);
+    margin: 0 20px 0 20px;
+    border-radius: 5px;
+    border-top-left-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor-formulario-contactus h3 {
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    padding: 20px 0 0 0;
+    color: $color-info-text;
+}
+
+.contenedor-formulario-contactus label {
+    width: 100%;
+    padding: 17px 0px 0 10px;
+    font-weight: 300;
+    font-size: $font-size-small;
+    color: $color-info-text;
+}
+
+.contenedor-formulario-contactus input {
+    width: 80%;
+    margin: 0 0 0 10px;
+    border: transparent;
+    padding: 5px 0 5px 0;
+    font-size: $font-size-small;
+    font-style: italic;
+}
+
+#message-input {
+    padding: 0 0 20px 0;
+}
+
+#submit-input {
+    margin: 15px 0 0 10px;
+    border-radius: 4px;
+    background: radial-gradient(circle, $color-submit-bg-from 15%, $color-submit-bg-from 41%, $color-submit-bg-to 96%);
+    border: 1px solid $color-submit-border;
+}
+
+#submit-input:hover {
+    background-color: $color-submit-hover;
+    color: $color-info-text;
+}
+
+@media (min-width: 1200px) {
+    .section-formulario {
+        width: 75%;
+        margin: 70px 0 50px 0;
+    }
+
+    .contenedor_mapa-contactus hr {
+        display: none;
+    }
+}
+
+/*fotofondo*/
+
+.imagen_final-logo-mobile {
+    display: block;
+    text-align: center;
+}
+
+.imagen_final-logo-desktop {
+    display: none;
+}
+
+.imagen_final-logo-mobile img {
+    width: 130px;
+    height: 100px;
+}
+
+@media (min-width: 1200px) {
+    .imagen_final-logo-mobile img {
+        width: 200px;
+        height: 170px;
+    }
+}

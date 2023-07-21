@@ -1,0 +1,41 @@
+// Variables header
+$color-header-green: rgb(194, 228, 198);
+$color-header-green-gradient: radial-gradient(circle, rgba(194, 228, 198, 1) 15%, rgba(194, 228, 198, 1) 41%, rgba(156, 227, 153, 1) 96%);
+$color-white: white;
+$color-hover-green: rgb(159, 182, 161);
+$font-italic: oblique;
+
+// Header styles
+header {
+  background: $color-header-green;
+  background: $color-header-green-gradient;
+
+  .navbar-toggler {
+    padding: 2px;
+    border: 1px solid transparent;
+  }
+
+  .navbar-expand-md {
+    .navbar-nav {
+      .nav-link {
+        color: $color-white;
+        font-size: 18px;
+
+        &:hover {
+          color: $color-hover-green;
+        }
+      }
+    }
+
+    .navbar-brand {
+      color: $color-white;
+      font-size: 25px;
+      padding: 0 0 0 35px;
+      font-style: $font-italic;
+
+      &:hover {
+        color: $color-hover-green;
+      }
+    }
+  }
+}

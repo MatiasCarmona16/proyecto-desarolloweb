@@ -1,0 +1,256 @@
+/* Variables page Reservations */
+$font-family: Arial, sans-serif;
+$font-size-small: 13px;
+$font-size-medium: 18px;
+$font-size-large: 24px;
+$font-size-title: 25px;
+$font-size-subtitle: 21px;
+$color-primary: #829c72;
+$color-secondary: #6e8b5d;
+$color-black: #000;
+$background-gradient-start: rgba(194, 228, 198, 1);
+$background-gradient-end: rgba(156, 227, 153, 1);
+
+#body_reservations_background {
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 8%, rgba(204,234,186,0.7329306722689075) 23%, rgba(199,232,179,0.5172443977591037) 26%, rgba(255,255,255,1) 34%);
+}
+
+/*-------------------VERSION MOBILE Y DESKTOP"PAGE RESERVATIONS"----------------------*/
+
+/*-------------------VERSION MOBILE Y DESKTOP TITULO PRINCIPAL Y OPCIONES DE BUSQUEDA PAGE RESERVATIONS------------------*/
+
+.titulo_principal-reservations {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+.titulo_principal-reservations h2 {
+  font-size: $font-size-title;
+  font-style: italic;
+  color: $color-primary;
+}
+
+.titulo_principal-reservations hr {
+  margin: 0 40px 0 40px;
+}
+
+.inputs_reservations {
+  display: block;
+  text-align: center;
+  margin: 35px 0 0 0;
+}
+
+.inputs_reservations select {
+  padding: 7px 25px 7px 25px;
+  text-align: center;
+  width: 240px;
+  margin: 5px 0 0 0;
+}
+
+.inputs_reservations option {
+  text-align: center;
+}
+
+.inputs_reservations input {
+  margin: 23px 0 0 0;
+  padding: 5px 50px 5px 50px;
+  text-align: center;
+  width: 240px;
+}
+
+.inputs_reservations hr {
+  margin: 40px 25px 0 25px;
+}
+
+.inputs_reservations a {
+  position: relative;
+  bottom: 13px;
+  padding: 6px 50px 6px 50px;
+  font-size: $font-size-medium;
+  background: radial-gradient(circle, $background-gradient-start 15%, $background-gradient-start 41%, $background-gradient-end 96%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(255, 255, 255);
+  font-style: italic;
+  border-radius: 5px;
+  color: $color-black;
+}
+
+.inputs_reservations a:hover {
+  background-color: $color-secondary;
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .titulo_principal-reservations {
+    margin: 90px 0 0 0;
+  }
+
+  .titulo_principal-reservations hr {
+    margin: 20px 110px 0 110px;
+  }
+
+  .inputs_reservations {
+    display: flex;
+    padding: 20px 0 20px 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inputs_reservations select {
+    margin: 0 15px 0 15px;
+    padding: 10px 35px 10px 35px;
+    font-size: $font-size-medium;
+  }
+
+  .inputs_reservations input {
+    margin: 0 15px 0 15px;
+    padding: 9px 60px 8px 60px;
+    font-size: $font-size-medium;
+  }
+
+  .inputs_reservations hr {
+    margin: 60px 20px 0 20px;
+  }
+
+  .inputs_reservations a {
+    text-align: center;
+    padding: 6px 90px 6px 90px;
+    font-size: $font-size-medium;
+  }
+}
+
+/*-------------------VERSION MOBILE Y DESKTOP ETIQUETAS DE OPCIONES DE BUSQUEDA PAGE RESERVATIONS------------------*/
+
+.contenedor_etiqueta_reservation {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 3%, rgba(204, 234, 186, 0.7329306722689075) 8%, rgba(199, 232, 179, 0.5172443977591037) 72%, rgba(255, 255, 255, 1) 86%);
+  padding: 10px 0 10px 0;
+  margin: 70px 0 0 0;
+}
+
+.contenedor_etiqueta_reservation h3 {
+  border-style: double;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  margin: 20px 100px 0 8px;
+  padding: 0 0 7px 20px;
+  font-weight: 300;
+  font-style: italic;
+  $font-size-subtitle: 21px;
+  color: #4a5842;
+}
+
+.contenedor_etiqueta_reservation-elementos {
+  background-color: white;
+  display: flex;
+  width: 90%;
+  height: 166px;
+  margin: 20px 0 35px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+}
+
+.contenedor_etiqueta_reservation-elementos h4 {
+  padding: 8px 0 0 10px;
+  font-size: $font-size-medium;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.contenedor_etiqueta_reservation-elementos img {
+  height: 110px;
+  width: 170px;
+  margin: 0 0 0 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+.contenido_etiqueta_subelementos {
+  border-left: 1px solid $color-black;
+  margin: 32px 0 25px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contenido_etiqueta_subelementos h5 {
+  font-size: $font-size-small;
+  padding: 0 0 0 5px;
+  margin: 6px 0 0 0;
+}
+
+.contenido_etiqueta_subelementos a {
+  font-size: $font-size-small;
+  padding: 0 0 0 5px;
+  color: $color-black;
+}
+
+.contenido_etiqueta_subelementos a:hover {
+  background-color: $color-secondary;
+  color: white;
+}
+
+.contenido_etiqueta_subelementos p {
+  text-align: end;
+  margin: 14px 10px 5px 0;
+  color: $color-primary;
+}
+
+#subelemento-boton {
+  text-align: center;
+  border: 1px solid rgb(105, 105, 105);
+  padding: 5px 0 5px 0px;
+  max-width: 60%;
+  margin: 0 30px 0 30px;
+  border-radius: 5px;
+  background: radial-gradient(circle, $background-gradient-start 15%, $background-gradient-start 41%, $background-gradient-end 96%);
+}
+
+@media (min-width: 1200px) {
+  .contenedor_etiqueta_reservation h3 {
+    margin: 20px 800px 0 20px;
+    padding: 0 0 7px 30px;
+    font-size: $font-size-large;
+  }
+
+  .contenedor_etiqueta_reservation-elementos {
+    height: 200px;
+  }
+
+  .contenedor_etiqueta_reservation-elementos h4 {
+    position: relative;
+    font-size: $font-size-large;
+    left: 260px;
+    top: 5px;
+  }
+
+  .contenedor_etiqueta_reservation-elementos img {
+    height: 170px;
+    width: 240px;
+    margin: 0 0 0 10px;
+    position: relative;
+    bottom: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+
+  .contenido_etiqueta_subelementos h5 {
+    padding: 15px 0 0 10px;
+    font-size: 16px;
+  }
+
+  .contenido_etiqueta_subelementos a {
+    font-size: 19px;
+    padding: 15px 0 0 10px;
+  }
+
+  .contenido_etiqueta_subelementos p {
+    text-align: end;
+    margin: 0 10px 0px 0;
+    font-size: $font-size-large;
+  }
+}

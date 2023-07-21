@@ -1,0 +1,79 @@
+/* Variables page room*/
+$font-family: Arial, sans-serif;
+$font-size-h1: 24px;
+$font-size-selector: 16px;
+$color-primary: #829c72;
+$color-secondary: #000;
+$background-gradient-start: rgba(255, 255, 255, 1);
+$background-gradient-mid: rgba(208, 226, 201, 1);
+$background-gradient-end: rgba(255, 255, 255, 1);
+
+/* Resto del código Sass */
+/*-------------------VERSION MOBILE Y DESKTOP "PAGE ROOM" MAIN--------------------*/
+
+h1 {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  margin: 40px 0 0 0;
+  color: $color-primary; /* Usamos la variable para el color principal */
+  font-size: $font-size-h1; /* Usamos la variable para el tamaño de fuente h1 */
+}
+
+.input_selectorhabitacion {
+  display:block;
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+#input_selectordetalles {
+  padding: 5px 30px 5px 30px;
+  text-align: center;
+  color: $color-secondary; /* Usamos la variable para el color secundario */
+  border-radius: 2px;
+  font-size: $font-size-selector; /* Usamos la variable para el tamaño de fuente selector */
+}
+
+.input_opciones-ubicacion {
+  text-align: start;
+}
+
+.contenedor_imagenes-room {
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 30px 0 30px 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, $background-gradient-start 11%, $background-gradient-mid 46%, $background-gradient-mid 53%, $background-gradient-end 84%); /* Usamos las variables para los colores de fondo */
+}
+
+.contenedor_imagenes-room img {
+  width: 300px;
+  height: 216px;
+  padding: 4px;
+  border: 1px solid transparent;
+  margin: 10px 0 0 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagenes-room_detalles2 {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .imagenes-room_detalles2 {
+    display: inline-block;
+    max-width: 300px;
+    max-height: 216px;
+    padding: 4px;
+    border: 1px solid transparent;
+    margin: 10px 0 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .contenedor_imagenes-room {
+    width: 1000px;
+  }
+}
