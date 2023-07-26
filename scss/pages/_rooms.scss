@@ -1,6 +1,6 @@
 /* Variables page room*/
 $font-family: Arial, sans-serif;
-$font-size-h1: 24px;
+$font-size-title: 25px;
 $font-size-selector: 16px;
 $color-primary: #829c72;
 $color-secondary: #000;
@@ -8,16 +8,16 @@ $background-gradient-start: rgba(255, 255, 255, 1);
 $background-gradient-mid: rgba(208, 226, 201, 1);
 $background-gradient-end: rgba(255, 255, 255, 1);
 
-/* Resto del código Sass */
+
 /*-------------------VERSION MOBILE Y DESKTOP "PAGE ROOM" MAIN--------------------*/
 
-h1 {
+.titulo-principa-opciones-de-habitacion h2 {
   display: block;
   text-align: center;
   font-style: italic;
   margin: 40px 0 0 0;
-  color: $color-primary; /* Usamos la variable para el color principal */
-  font-size: $font-size-h1; /* Usamos la variable para el tamaño de fuente h1 */
+  color: $color-primary; 
+  font-size: $font-size-title; 
 }
 
 .input_selectorhabitacion {
@@ -29,9 +29,9 @@ h1 {
 #input_selectordetalles {
   padding: 5px 30px 5px 30px;
   text-align: center;
-  color: $color-secondary; /* Usamos la variable para el color secundario */
+  color: $color-secondary; 
   border-radius: 2px;
-  font-size: $font-size-selector; /* Usamos la variable para el tamaño de fuente selector */
+  font-size: $font-size-selector;
 }
 
 .input_opciones-ubicacion {
@@ -63,6 +63,10 @@ h1 {
 }
 
 @media (min-width: 1200px) {
+  .titulo-principa-opciones-de-habitacion h2 {
+    margin: 90px 0 0 0;
+  }
+
   .imagenes-room_detalles2 {
     display: inline-block;
     max-width: 300px;
