@@ -1,31 +1,35 @@
 /* Colores */
-$color-fotodeportada-bg: rgba(206, 255, 190, 0.781);
+$color-fotodeportada-bg: rgba(163, 233, 145, 0.527);
 $color-boton-detalles-bg: #ffffff;
 $color-boton-detalles-hover: #6e8b5d;
 $color-active-indicator: #d5ffbc;
+$color-hr-index: rgba(97, 136, 87, 0.466);
+$sombras-hr-index: 0 4px 8px rgba(0, 0, 0, 0.5);
 
-$primaryColor: rgb(194, 228, 198);
+$primaryColor: rgba(120, 173, 126, 0.644);
 $secondaryColor: rgb(156, 227, 153);
 $gradientStart: rgba(255, 255, 255, 1);
 $gradientMiddle: rgba(221, 221, 221, 1);
 $gradientEnd: rgba(204, 231, 189, 1);
 
+$font-raleway: 'Raleway', sans-serif;
 /*-------------------INDEX PORTADA Y RESERVAS MAIN MOBILE Y DESKTOP----------------------*/
 
 .sec-main__fotodeportada {
-  background-image: url(../img/220t1600000109cajDC87_R_960_660_R5_D.webp);
+  background-image: url(/img/exterior.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40vh;
+  height: 45vh;
 }
 
 .sec-main__fotodeportada h2 {
   text-align: center;
-  padding-top: 5rem;
-  font-size: 25px;
-  font-style: italic;
-  font-weight: 300;
+  padding-top: 9rem;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: $font-raleway;
+  color: #ffffff;
 }
 
 .sec-main__reservas {
@@ -41,6 +45,7 @@ $gradientEnd: rgba(204, 231, 189, 1);
   margin: 0 2rem 0 2rem;
   padding: 6px 0 6px 0;
   border-radius: 4px;
+  font-family: $font-raleway;
 }
 
 .sec-main__reservas input {
@@ -90,28 +95,30 @@ $gradientEnd: rgba(204, 231, 189, 1);
 
 @media (min-width: 1200px) {
   .sec-main__fotodeportada {
-    height: 87vh;
+    height: 96vh;
   }
 
   .sec-main__fotodeportada h2 {
-    padding-top: 13rem;
-    font-size: 45px;
+    padding-top: 22rem;
+    font-size: 70px;
     font-style: italic;
   }
 
   .sec-main__reservas {
     display: flex;
-    padding: 20px 0 20px 0;
+    padding: 25px 0 25px 0;
     justify-content: space-around;
     align-items: center;
-    bottom: 50px;
+    bottom: 32px;
+    margin: 0 1.5rem 0 1.5rem;
   }
 
   .sec-main__reservas input {
     margin: 0 35px 0 25px;
-    padding: 4px 13px 4px 13px;
+    padding: 10px 70px 10px 70px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-style: italic;
+    font-size: 15px;
   }
 
   .reservas__botonubicacion {
@@ -128,7 +135,7 @@ $gradientEnd: rgba(204, 231, 189, 1);
   }
 
   .boton-reservar__detalles {
-    padding: 4px 100px 4px 100px;
+    padding: 10px 90px 10px 90px;
     border-radius: 4px;
     border: 1px solid rgb(228, 227, 227);
     background-color: $color-boton-detalles-bg;
@@ -142,18 +149,43 @@ $gradientEnd: rgba(204, 231, 189, 1);
   }
 }
 
+@media (min-width:1800px) {
+  .sec-main__reservas {
+    padding: 25px 0 25px 0;
+    bottom: 32px;
+    margin: 0 8rem 0 8rem;
+  }
+
+  .sec-main__reservas label {
+    font-size: 17px;
+  }
+
+  .sec-main__reservas input {
+    font-size: 17px;
+    padding: 10px 100px 10px 100px;
+  }
+
+  .boton-reservar__detalles {
+    font-size: 17px;
+    padding: 10px 100px 10px 100px;
+  }
+}
+
 /*-------------------------ROOM MAIN INDEX MOBILE Y DESKTOP----------------------------*/
 
 .titulo-secundario-room h3 {
   display: block;
   margin: 20px 0 0 25px;
   font-style: italic;
-  font-weight: 100;
+  font-weight: 300;
+  font-family: $font-raleway;
 }
 
 .titulo-secundario-room hr {
   display: block;
   margin: 10px 90px 20px 15px;
+  color: $color-hr-index;
+  box-shadow: $sombras-hr-index;
 }
 
 .seccionroomsdesktop {
@@ -167,7 +199,13 @@ $gradientEnd: rgba(204, 231, 189, 1);
 @media (min-width: 1200px) {
   .titulo-secundario-room h3 {
     font-size: 35px;
-    margin: 0 0 5px 40px;
+    margin: 50px 40px 5px 40px;
+    text-align: center;
+  }
+
+  .titulo-secundario-room hr {
+    display: block;
+    margin: 10px 90px 20px 90px;
   }
 
   .seccionrooms {
@@ -210,24 +248,34 @@ $gradientEnd: rgba(204, 231, 189, 1);
     text-align: center;
     margin: 80px 0 0 0;
     font-style: italic;
-    font-weight: 100;
+    font-weight: 300;
+    font-family: $font-raleway;
+    padding: 17px 0 0 0;
 }
 
 .titulo-secunadario-service {
     display: block;
     text-align: center;
-    margin: 9px 40px 15px 40px;
+    margin: 9px 0 0px 0;
     color: black;
+    background-color: rgba(110, 161, 97, 0.199);
 }
 
+#servhr1 {
+  display: block;
+  text-align: center;
+  margin: 15px 40px 0 40px;
+  color: rgba(252, 252, 252, 0.664);
+  box-shadow: $sombras-hr-index;
+}
 .contenedorserv {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 15px;
     column-gap: 20px;
-    background: $gradientStart;
-    background: linear-gradient(90deg, $gradientStart 11%, $gradientMiddle 19%, $gradientEnd 49%, $gradientStart 89%);
-    padding: 10px 0 10px 0;
+    background-color: rgba(110, 161, 97, 0.199);
+    padding: 40px 0 50px 0;
+    margin: 0 0 90px 0;
 }
 
 .imgserimg {
@@ -237,6 +285,7 @@ $gradientEnd: rgba(204, 231, 189, 1);
     height: 150px;
     object-fit: cover;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3)
 }
 
 .posimg {
@@ -245,25 +294,32 @@ $gradientEnd: rgba(204, 231, 189, 1);
 }
 
 #servhr2 {
-    display: block;
+    display: none;
     text-align: center;
-    margin: 50px 50px 47px 50px;
-    color: black;
+    margin: 0 40px 47px 40px;
+    color: $color-hr-index;
+    box-shadow: $sombras-hr-index;
 }
 
 @media (min-width: 1200px) {
     .titulo-secunadario-service h3 {
         margin: 130px 0 0 0;
         font-size: 35px;
+        padding: 30px 0 0 0;
+    }
+
+    #servhr1 {
+      display: block;
+      text-align: center;
+      margin: 20px 200px 0 200px;
     }
 
     .contenedorserv {
-        row-gap: 25px;
-        margin: 30px 0 0 0;
+        row-gap: 40px;
+        margin: 0 0 0 0;
         column-gap: 150px;
-        background: $primaryColor;
-        background: radial-gradient(circle, $primaryColor 25%, $gradientStart 60%);
-        padding: 0;
+        background-color: rgba(110, 161, 97, 0.199);
+        padding: 60px 0 70px 0;
     }
 
     .imgserimg {
@@ -271,6 +327,10 @@ $gradientEnd: rgba(204, 231, 189, 1);
         height: 300px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
     }
+
+    #servhr2 {
+      margin: 50px 200px 47px 200px;
+}
 }
 
 /*---------------UBICACION MAIN MOBILE Y DESKTOP----------------------*/
@@ -279,19 +339,20 @@ $gradientEnd: rgba(204, 231, 189, 1);
     display: block;
     border: 1px solid transparent;
     padding: 10px 0 6px 0;
-    background: $primaryColor;
-    background: radial-gradient(circle, $primaryColor 15%, $primaryColor 41%, $secondaryColor 96%);
-    font-size: 15px;
+    background-color: rgba(110, 161, 97, 0.473);
+    font-size: 17px;
+    font-weight: 400;
     text-align: center;
     color: #ffffff;
     font-style: italic;
+    font-family: $font-raleway;
 }
 
 @media (min-width: 1200px) {
     .titulo-secundario-ubicacion {
         display: flex;
         justify-content: center;
-        margin: 80px 0 0 0;
+        margin: 150px 0 0 0;
     }
 
     .contenedor-h3-ubicacion {
@@ -328,22 +389,44 @@ $gradientEnd: rgba(204, 231, 189, 1);
 
 #hrrev {
     display: block;
-    margin: 50px 40px 15px 40px;
+    margin: 90px 40px 0 40px;
     text-align: center;
+    color: $color-hr-index;
+    box-shadow: $sombras-hr-index;
 }
 
 .reviews h3 {
     display: none;
+    font-family: $font-raleway;
+}
+
+.reviews h4 {
+  display: block;
+  text-align: center;
+  position: relative;
+  bottom: 35px;
+  font-size: 50px;
+  color:#688855
+}
+
+.flexreview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .rev {
     border: 1px solid rgb(129, 129, 129);
     padding: 1rem;
-    margin: 40px 50px 40px 50px ;
+    margin: 30px 50px 40px 50px ;
     border-radius: 5px;
+    max-width: 320px;
+    font-family: $font-raleway;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 340px;
 }
 
-.rev h4 {
+.rev h5 {
     display: block;
     text-align: center;
     font-size: 18px;
@@ -371,9 +454,13 @@ $gradientEnd: rgba(204, 231, 189, 1);
         text-align: center;
         margin: 70px 0 0 0;
         font-size: 35px;
-        font-weight: 200;
+        font-weight: 300;
     }
-    
+
+    .reviews h4 {
+      display: none;
+    }
+
     .flexreview {
         display: flex;
         justify-content: center;
@@ -383,14 +470,13 @@ $gradientEnd: rgba(204, 231, 189, 1);
     .rev {
         border: 1px solid rgb(129, 129, 129);
         padding: 2rem;
-        width: 450px;
-        height: 400px;
+        max-width: 450px;
+        height: 410px;
         border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         background-color: #ffffff6c;
     }
     
-    .rev h4 {
+    .rev h5 {
         display: block;
         text-align: center;
         font-size: 22px;
@@ -419,21 +505,24 @@ $gradientEnd: rgba(204, 231, 189, 1);
     display: block;
     margin: 20px 0 0 25px;
     font-style: italic;
-    font-weight: 100;
+    font-weight: 300;
+    font-family: $font-raleway;
 }
 
 .titulo-secundario-aboutus hr {
     display: block;
-    margin: 7px 110px 10px 5px;
+    margin: 7px 90px 10px 15px;
+    color: $color-hr-index;
+    box-shadow: $sombras-hr-index;
 }
 
 .aboutusconteiner {
     display: block;
-    background: rgb(194,228,198);
-background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1) 41%, rgba(156,227,153,1) 96%);
+    background-color: rgba(110, 161, 97, 0.473);
     border: 1px solid rgba(198, 198, 198, 0);
     padding: 25px ;
-    margin: 110px 0 0 0 ;
+    margin: 50px 0 0 0 ;
+    height: 150px;
 }
 
 .aboutusconteiner p{
@@ -442,19 +531,23 @@ background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1)
 
 .video-aboutus iframe {
     position: relative;
-    bottom: 160px;
+    bottom: 200px;
     padding: 30px;
 }
 
 #abouthr2 {
     display: block;
     margin: -160px 5px 0 110px;
-    color: white;
+    color: transparent;
+    box-shadow: none;
 }
 
 @media (min-width: 1200px) {
     .aboutusconteiner {
         padding: 90px ;
+        margin: 150px 0 0 0 ;
+        height: 200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     }
 
     .aboutusconteiner p{
@@ -462,7 +555,10 @@ background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1)
         text-align: right;
         font-size: 25px;
         padding: 0 130px 0 0;
-        font-weight: 200;
+        font-weight: 300;
+        font-family: $font-raleway ;
+        font-style: italic;
+        color: white;
     }
 
     .titulo-secundario-aboutus h3 {
@@ -485,6 +581,7 @@ background: radial-gradient(circle, rgba(194,228,198,1) 15%, rgba(194,228,198,1)
 
     #abouthr2 {
         margin: -300px 5px 150px 110px;
-        color: black;
+        color: $color-hr-index;
+        box-shadow: $sombras-hr-index;
     }
 }

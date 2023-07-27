@@ -15,19 +15,23 @@ $background-gradient-end: rgba(255, 255, 255, 1);
   display: block;
   text-align: center;
   font-style: italic;
-  margin: 40px 0 0 0;
+  margin: 40px 30px 15px 30px;
   color: $color-primary; 
   font-size: $font-size-title; 
+  border-bottom: 2px solid #829c72;
+  border-radius: 5px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  padding: 0 0 5px 0;
 }
 
 .input_selectorhabitacion {
   display:block;
   text-align: center;
-  margin: 10px 0 0 0;
+  margin: 30px 0 0 0;
 }
 
 #input_selectordetalles {
-  padding: 5px 30px 5px 30px;
+  padding: 7px 30px 7px 30px;
   text-align: center;
   color: $color-secondary; 
   border-radius: 2px;
@@ -64,7 +68,16 @@ $background-gradient-end: rgba(255, 255, 255, 1);
 
 @media (min-width: 1200px) {
   .titulo-principa-opciones-de-habitacion h2 {
-    margin: 90px 0 0 0;
+    margin: 90px 500px 0 500px;
+    padding: 0 0 5px 0;
+  }
+
+  .input_selectorhabitacion {
+    margin: 30px 0 0 0;
+  }
+
+  #input_selectordetalles {
+    padding: 10px 35px 10px 35px;
   }
 
   .imagenes-room_detalles2 {

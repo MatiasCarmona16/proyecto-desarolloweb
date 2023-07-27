@@ -9,6 +9,8 @@ $padding-large: 20px;
 $image-width-small: 30%;
 $image-width-large: 25%;
 
+$font-raleway: 'Raleway', sans-serif;
+
 // Styles
 footer {
   display: grid;
@@ -19,12 +21,15 @@ footer {
   padding: $padding-small;
   grid-template-columns: 1fr 1fr;
   justify-items: start;
+  font-family: $font-raleway;
+  
 
   h4 {
     display: grid;
     font-size: $font-size-small;
     margin: 0 0 5px 30px;
     width: 100px;
+    font-weight: 500;
   }
 
   ul {
@@ -56,12 +61,12 @@ footer {
     justify-content: space-between;
     align-items: start;
     padding: $padding-large 20px $padding-large 80px;
-    font-weight: 100;
+    font-weight: 300;
 
     h4 {
       display: flex;
       font-size: $font-size-large;
-      width: 100%;
+      width: 95%;
       font-weight: bolder;
       font-style: italic;
     }
@@ -85,13 +90,7 @@ footer {
       width: $image-width-large;
       position: relative;
       left: 150px;
-      top: 30px;
-    }
-
-    @media (min-width: 1450px) {
-      img {
-        top: 10px;
-      }
+      top: 10px;
     }
   }
 

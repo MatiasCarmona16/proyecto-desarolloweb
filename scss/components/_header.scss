@@ -1,37 +1,52 @@
 // Variables header
-$color-header-green: rgb(194, 228, 198);
-$color-header-green-gradient: radial-gradient(circle, rgba(194, 228, 198, 1) 15%, rgba(194, 228, 198, 1) 41%, rgba(156, 227, 153, 1) 96%);
+$color-header-green: rgb(196,232,191);
+$color-header-green-gradient: linear-gradient(180deg, rgba(196,232,191,1) 4%, rgba(162,218,155,1) 32%, rgba(162,218,155,1) 70%, rgba(196,232,191,1) 87%);
 $color-white: white;
 $color-hover-green: rgb(159, 182, 161);
-$font-italic: oblique;
+$font-raleway: 'Raleway', sans-serif;
 
 // Header styles
+.header_background-secciones {
+  background: rgba(92, 146, 90, 0.801);
+  padding: 0px;
+}
+
 header {
-  background: $color-header-green;
-  background: $color-header-green-gradient;
+  position:absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(92, 119, 88, 0.233);
+  z-index: 1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.582);
 
   .navbar-toggler {
     padding: 2px;
     border: 1px solid transparent;
   }
 
-  .navbar-expand-md {
+  .navbar-expand-lg {
     .navbar-nav {
       .nav-link {
         color: $color-white;
         font-size: 18px;
+        padding: 15px 0 0 0;
+        font-family: $font-raleway;
 
         &:hover {
           color: $color-hover-green;
+        }
+        @media (min-width: 990px) {
+          padding: 0 12px 0 12px;
+          margin: 0 10px 0 0;
         }
       }
     }
 
     .navbar-brand {
       color: $color-white;
-      font-size: 25px;
+      font-size: 20px;
       padding: 0;
-      font-style: $font-italic;
+      font-family: $font-raleway;
 
       &:hover {
         color: $color-hover-green;
@@ -41,8 +56,11 @@ header {
     @media (min-width:1200px) {
       .navbar-brand {
         padding: 0 0 0 35px;
+        font-size: 25px;
       }
     }
   }
 }
+
+
 

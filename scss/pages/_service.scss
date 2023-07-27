@@ -23,24 +23,17 @@ $background-color-4: rgba(255,255,255,0.7861519607843137);
     font-size: $font-size-title;
     font-style: italic;
     color: $primary-color;
-}
-
-.titulo_principal hr {
-    margin: 0 60px 45px 60px;
-    height: 5px;
-    background-color: $primary-color;
-    color: $primary-color;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-bottom: 2px solid #829c72;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    margin: 40px 30px 15px 30px;
+    padding: 0 0 5px 0;
 }
 
 @media (min-width: 1200px) {
     .titulo_principal {
-        margin: 100px 0 0 0;
-    }
-
-    .titulo_principal hr {
-        margin: 0 500px 60px 500px;
+        margin: 90px 500px 0 500px;
+        padding: 0 0 5px 0;
     }
 }
 
@@ -101,7 +94,7 @@ $background-color-4: rgba(255,255,255,0.7861519607843137);
     font-weight: 400;
     font-style: italic;
     font-size: 18px;
-    margin: 80px 0 0 0;
+    margin: 170px 0 0 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 6px;
     color: #ffffff;
@@ -244,10 +237,13 @@ $background-color-4: rgba(255,255,255,0.7861519607843137);
 
 .contenido_secundario-events h3 {
     display: block;
-    margin: 150px 0 0 40px ;
+    margin: 150px 20px 0 20px ;
     font-size: 19px;
     font-style: italic;
     font-weight: 400;
+    border-bottom: 2px solid $secondary-color;
+    border-radius: 10px;
+    padding: 0 0 5px 20px;
 }
 
 .contenido_secundario-events hr {
@@ -283,7 +279,7 @@ $background-color-4: rgba(255,255,255,0.7861519607843137);
     }
 
     .contenido_secundario-events h3 {
-        margin: 350px 0 10px 40px;
+        margin: 350px 400px 10px 400px;
         font-size: 25px;
         text-align: center;
     }
@@ -314,6 +310,7 @@ $background-color-4: rgba(255,255,255,0.7861519607843137);
     font-style: italic;
     border-bottom: 2px solid $secondary-color;
     border-radius: 10px;
+    padding: 0 0 5px 0;
 }
 
 .contenido_secundario-ourpool-contenedor-imagenes{
