@@ -141,6 +141,12 @@ input {
   text-decoration: none;
 }
 
+input::placeholder {
+  opacity: 0.5;
+  color: red;
+  padding: 0;
+}
+
 hr {
   opacity: 1;
 }
@@ -175,6 +181,12 @@ hr {
 }
 
 /* Colores */
+input::placeholder {
+  opacity: 0.5;
+  color: red;
+  padding: 0;
+}
+
 /*-------------------INDEX PORTADA Y RESERVAS MAIN MOBILE Y DESKTOP----------------------*/
 .sec-main__fotodeportada {
   background-image: url(../img/exterior.jpg);
@@ -700,10 +712,6 @@ hr {
   }
 }
 /* Variables page room*/
-input {
-  padding: 0;
-}
-
 /*-------------------VERSION MOBILE Y DESKTOP "PAGE ROOM" MAIN--------------------*/
 .titulo-principa-opciones-de-habitacion h2 {
   display: block;
