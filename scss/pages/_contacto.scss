@@ -6,9 +6,9 @@ $font-size-large: 25px;
 
 /* Variables para colores*/
 $color-green: #829c72;
-$color-info-text: white;
+$color-info-text: rgb(53, 68, 49);
 $color-map-label: #829c72;
-$color-submit-hover: #6e8b5d;
+$color-submit-hover: #98c081;
 
 /* Variables para colores de fondo*/
 $color-bg-gradient-from: rgba(255, 255, 255, 1);
@@ -28,7 +28,7 @@ $font-raleway: 'Raleway', sans-serif;
 
 .titulo_principal-contactus {
     text-align: center;
-    margin: 50px 0 0 0;
+    margin: 150px 0 0 0;
 }
 
 .titulo_principal-contactus h2 {
@@ -40,6 +40,7 @@ $font-raleway: 'Raleway', sans-serif;
 
 .titulo_principal-contactus hr {
     margin: 0 60px 40px 60px;
+    color: #768f67b9;
 }
 
 @media (min-width: 1200px) {
@@ -83,7 +84,7 @@ $font-raleway: 'Raleway', sans-serif;
     font-size: $font-size-small;
     margin-bottom: 8px;
     font-weight: 300;
-    color: $color-info-text;
+    color: white;
 }
 
 @media (min-width: 1200px) {
@@ -152,7 +153,7 @@ $font-raleway: 'Raleway', sans-serif;
     font-weight: 300;
     font-style: italic;
     padding: 20px 0 0 0;
-    color: $color-info-text;
+    color: white;
 }
 
 .contenedor-formulario-contactus label {
@@ -160,7 +161,7 @@ $font-raleway: 'Raleway', sans-serif;
     padding: 17px 0px 0 10px;
     font-weight: 300;
     font-size: $font-size-small;
-    color: $color-info-text;
+    color: white;
 }
 
 .contenedor-formulario-contactus input {
@@ -170,6 +171,7 @@ $font-raleway: 'Raleway', sans-serif;
     padding: 5px 0 5px 0;
     font-size: $font-size-small;
     font-style: italic;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #message-input {
@@ -179,8 +181,10 @@ $font-raleway: 'Raleway', sans-serif;
 #submit-input {
     margin: 15px 0 0 10px;
     border-radius: 4px;
-    background: radial-gradient(circle, $color-submit-bg-from 15%, $color-submit-bg-from 41%, $color-submit-bg-to 96%);
+    background: rgb(119, 146, 113);
     border: 1px solid $color-submit-border;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #submit-input:hover {

@@ -215,6 +215,8 @@ hr {
   border: 1px solid transparent;
   padding: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  color: black;
 }
 
 .sec-main__reservas input:hover {
@@ -726,6 +728,8 @@ hr {
   border-radius: 2px;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
+  background-color: white;
+  color: black;
 }
 
 .input_opciones-ubicacion {
@@ -1168,6 +1172,10 @@ hr {
   text-align: center;
   width: 240px;
   margin: 5px 0 0 0;
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 2px;
 }
 
 .inputs_reservations option {
@@ -1179,6 +1187,10 @@ hr {
   padding: 5px 50px 5px 50px;
   text-align: center;
   width: 240px;
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 2px;
 }
 
 .inputs_reservations hr {
@@ -1191,7 +1203,7 @@ hr {
   bottom: 13px;
   padding: 6px 50px 6px 50px;
   font-size: 18px;
-  background: rgb(138, 202, 122);
+  background: rgb(119, 146, 113);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   border: 1px solid rgb(255, 255, 255);
   font-style: italic;
@@ -1371,7 +1383,7 @@ hr {
 /*-----------------TITULO PRINCIPAL DESKTOP Y MOBILE CONTACT US------------------*/
 .titulo_principal-contactus {
   text-align: center;
-  margin: 50px 0 0 0;
+  margin: 150px 0 0 0;
 }
 
 .titulo_principal-contactus h2 {
@@ -1383,6 +1395,7 @@ hr {
 
 .titulo_principal-contactus hr {
   margin: 0 60px 40px 60px;
+  color: rgba(118, 143, 103, 0.7254901961);
 }
 
 @media (min-width: 1200px) {
@@ -1502,6 +1515,7 @@ hr {
   padding: 5px 0 5px 0;
   font-size: 14px;
   font-style: italic;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #message-input {
@@ -1511,13 +1525,15 @@ hr {
 #submit-input {
   margin: 15px 0 0 10px;
   border-radius: 4px;
-  background: radial-gradient(circle, rgb(194, 228, 198) 15%, rgb(194, 228, 198) 41%, rgb(156, 227, 153) 96%);
+  background: rgb(119, 146, 113);
   border: 1px solid white;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #submit-input:hover {
-  background-color: #6e8b5d;
-  color: white;
+  background-color: #98c081;
+  color: rgb(53, 68, 49);
 }
 
 @media (min-width: 1200px) {
