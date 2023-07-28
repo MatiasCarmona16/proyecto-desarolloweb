@@ -700,6 +700,10 @@ hr {
   }
 }
 /* Variables page room*/
+input {
+  padding: 0;
+}
+
 /*-------------------VERSION MOBILE Y DESKTOP "PAGE ROOM" MAIN--------------------*/
 .titulo-principa-opciones-de-habitacion h2 {
   display: block;
@@ -724,12 +728,12 @@ hr {
 #input_selectordetalles {
   padding: 7px 30px 7px 30px;
   text-align: center;
-  color: #000;
   border-radius: 2px;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
   background-color: white;
   color: black;
+  border: 1px solid black;
 }
 
 .input_opciones-ubicacion {

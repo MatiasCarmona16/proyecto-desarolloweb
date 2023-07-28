@@ -8,6 +8,10 @@ $background-gradient-mid: rgba(208, 226, 201, 1);
 $background-gradient-end: rgba(255, 255, 255, 1);
 
 $font-raleway: 'Raleway', sans-serif;
+
+input {
+  padding: 0;
+}
 /*-------------------VERSION MOBILE Y DESKTOP "PAGE ROOM" MAIN--------------------*/
 
 .titulo-principa-opciones-de-habitacion h2 {
@@ -32,13 +36,13 @@ $font-raleway: 'Raleway', sans-serif;
 
 #input_selectordetalles {
   padding: 7px 30px 7px 30px;
-  text-align: center;
-  color: $color-secondary; 
+  text-align: center; 
   border-radius: 2px;
   font-size: $font-size-selector;
   font-family: $font-raleway;
   background-color: white;
   color: black;
+  border: 1px solid black;
 }
 
 .input_opciones-ubicacion {
