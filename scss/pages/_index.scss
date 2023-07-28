@@ -14,11 +14,6 @@ $gradientEnd: rgba(204, 231, 189, 1);
 
 $font-raleway: 'Raleway', sans-serif;
 
-input::placeholder {
-  opacity: 0.5;
-  color: red;
-  padding: 0;
-}
 /*-------------------INDEX PORTADA Y RESERVAS MAIN MOBILE Y DESKTOP----------------------*/
 
 .sec-main__fotodeportada {
@@ -62,6 +57,12 @@ input::placeholder {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: white;
   color: black;
+}
+
+input[type="date" i] {
+  padding-inline-start: 1px;
+  overflow: hidden;
+  padding: 4px;
 }
 
 .sec-main__reservas input:hover {
