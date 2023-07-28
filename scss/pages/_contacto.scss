@@ -1,6 +1,5 @@
 
 /* Variables para fuentes*/
-$font-family: 'Arial', sans-serif;
 $font-size-small: 14px;
 $font-size-medium: 17px;
 $font-size-large: 25px;
@@ -22,6 +21,7 @@ $color-submit-bg-from: rgb(194, 228, 198);
 $color-submit-bg-to: rgba(156, 227, 153, 1);
 $color-submit-border: white;
 
+$font-raleway: 'Raleway', sans-serif;
 /*-------------------VERSION MOBILE Y DESKTOP "PAGE CONTACT US"----------------------*/
 
 /*-----------------TITULO PRINCIPAL DESKTOP Y MOBILE CONTACT US------------------*/
@@ -35,6 +35,7 @@ $color-submit-border: white;
     font-size: $font-size-large;
     font-style: italic;
     color: $color-green;
+    font-family: $font-raleway;
 }
 
 .titulo_principal-contactus hr {
@@ -43,7 +44,7 @@ $color-submit-border: white;
 
 @media (min-width: 1200px) {
     .titulo_principal-contactus {
-        margin: 90px 0 0 0;
+        margin: 150px 0 0 0;
     }
 
     .titulo_principal-contactus hr {
@@ -75,6 +76,7 @@ $color-submit-border: white;
     border-radius: 5px;
     border-top-left-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: $font-raleway;
 }
 
 .contenedor-informacion-contactus p {
@@ -142,6 +144,7 @@ $color-submit-border: white;
     border-radius: 5px;
     border-top-left-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-family: $font-raleway;
 }
 
 .contenedor-formulario-contactus h3 {

@@ -1,5 +1,4 @@
 /* Variables page room*/
-$font-family: Arial, sans-serif;
 $font-size-title: 25px;
 $font-size-selector: 16px;
 $color-primary: #829c72;
@@ -8,20 +7,21 @@ $background-gradient-start: rgba(255, 255, 255, 1);
 $background-gradient-mid: rgba(208, 226, 201, 1);
 $background-gradient-end: rgba(255, 255, 255, 1);
 
-
+$font-raleway: 'Raleway', sans-serif;
 /*-------------------VERSION MOBILE Y DESKTOP "PAGE ROOM" MAIN--------------------*/
 
 .titulo-principa-opciones-de-habitacion h2 {
   display: block;
   text-align: center;
   font-style: italic;
-  margin: 40px 30px 15px 30px;
+  margin: 150px 30px 15px 30px;
   color: $color-primary; 
   font-size: $font-size-title; 
   border-bottom: 2px solid #829c72;
   border-radius: 5px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
   padding: 0 0 5px 0;
+  font-family: $font-raleway;
 }
 
 .input_selectorhabitacion {
@@ -36,6 +36,7 @@ $background-gradient-end: rgba(255, 255, 255, 1);
   color: $color-secondary; 
   border-radius: 2px;
   font-size: $font-size-selector;
+  font-family: $font-raleway;
 }
 
 .input_opciones-ubicacion {
@@ -68,7 +69,7 @@ $background-gradient-end: rgba(255, 255, 255, 1);
 
 @media (min-width: 1200px) {
   .titulo-principa-opciones-de-habitacion h2 {
-    margin: 90px 500px 0 500px;
+    margin: 150px 500px 0 500px;
     padding: 0 0 5px 0;
   }
 

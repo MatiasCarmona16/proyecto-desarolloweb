@@ -1,5 +1,4 @@
 /* Variables page Reservations */
-$font-family: Arial, sans-serif;
 $font-size-small: 13px;
 $font-size-medium: 18px;
 $font-size-large: 24px;
@@ -11,29 +10,33 @@ $color-black: #000;
 $background-gradient-start: rgba(194, 228, 198, 1);
 $background-gradient-end: rgba(156, 227, 153, 1);
 
+$font-raleway: 'Raleway', sans-serif;
 /*-------------------VERSION MOBILE Y DESKTOP"PAGE RESERVATIONS"----------------------*/
 
 /*-------------------VERSION MOBILE Y DESKTOP TITULO PRINCIPAL Y OPCIONES DE BUSQUEDA PAGE RESERVATIONS------------------*/
 
 .titulo_principal-reservations {
   text-align: center;
-  margin: 50px 0 0 0;
+  margin: 150px 0 0 0;
 }
 
 .titulo_principal-reservations h2 {
   font-size: $font-size-title;
   font-style: italic;
   color: $color-primary;
+  font-family: $font-raleway;
 }
 
 .titulo_principal-reservations hr {
   margin: 0 40px 0 40px;
+  color: #768f67b9;
 }
 
 .inputs_reservations {
   display: block;
   text-align: center;
   margin: 35px 0 0 0;
+  font-family: $font-raleway;
 }
 
 .inputs_reservations select {
@@ -56,6 +59,7 @@ $background-gradient-end: rgba(156, 227, 153, 1);
 
 .inputs_reservations hr {
   margin: 40px 25px 0 25px;
+  color: #768f67b9;
 }
 
 .inputs_reservations a {
@@ -63,12 +67,13 @@ $background-gradient-end: rgba(156, 227, 153, 1);
   bottom: 13px;
   padding: 6px 50px 6px 50px;
   font-size: $font-size-medium;
-  background: radial-gradient(circle, $background-gradient-start 15%, $background-gradient-start 41%, $background-gradient-end 96%);
+  background: rgb(138, 202, 122);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   border: 1px solid rgb(255, 255, 255);
   font-style: italic;
   border-radius: 5px;
   color: $color-black;
+  color: white;
 }
 
 .inputs_reservations a:hover {
@@ -78,7 +83,7 @@ $background-gradient-end: rgba(156, 227, 153, 1);
 
 @media (min-width: 1200px) {
   .titulo_principal-reservations {
-    margin: 90px 0 0 0;
+    margin: 150px 0 0 0;
   }
 
   .titulo_principal-reservations hr {
@@ -121,6 +126,7 @@ $background-gradient-end: rgba(156, 227, 153, 1);
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 3%, rgba(204, 234, 186, 0.7329306722689075) 8%, rgba(199, 232, 179, 0.5172443977591037) 72%, rgba(255, 255, 255, 1) 86%);
   padding: 10px 0 10px 0;
   margin: 70px 0 0 0;
+  font-family: $font-raleway;
 }
 
 .contenedor_etiqueta_reservation h3 {

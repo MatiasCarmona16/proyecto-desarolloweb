@@ -1,6 +1,4 @@
 // Variables
-$color-primary: rgb(194, 228, 198);
-$color-secondary: rgba(156, 227, 153, 1);
 $font-size-small: 12px;
 $font-size-medium: 16px;
 $font-size-large: 18px;
@@ -15,8 +13,7 @@ $font-raleway: 'Raleway', sans-serif;
 footer {
   display: grid;
   margin: 0px 0 10px 0;
-  background: $color-primary;
-  background: radial-gradient(circle, $color-primary 15%, $color-primary 41%, $color-secondary 96%);
+  background: rgba(110, 161, 97, 0.473);
   width: 100%;
   padding: $padding-small;
   grid-template-columns: 1fr 1fr;
