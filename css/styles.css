@@ -141,12 +141,6 @@ input {
   text-decoration: none;
 }
 
-input::placeholder {
-  opacity: 0.5;
-  color: red;
-  padding: 0;
-}
-
 hr {
   opacity: 1;
 }
@@ -181,12 +175,6 @@ hr {
 }
 
 /* Colores */
-input::placeholder {
-  opacity: 0.5;
-  color: red;
-  padding: 0;
-}
-
 /*-------------------INDEX PORTADA Y RESERVAS MAIN MOBILE Y DESKTOP----------------------*/
 .sec-main__fotodeportada {
   background-image: url(../img/exterior.jpg);
@@ -1196,7 +1184,7 @@ input::placeholder {
 
 .inputs_reservations input {
   margin: 23px 0 0 0;
-  padding: 5px 50px 5px 50px;
+  padding: 7px 50px 7px 50px;
   text-align: center;
   width: 240px;
   background-color: white;
