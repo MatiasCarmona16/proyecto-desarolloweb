@@ -63,9 +63,9 @@ $font-raleway: 'Raleway', sans-serif;
   margin-bottom: 80px;
   border-radius: 4px;
   background: linear-gradient(180deg, $background-gradient-start 11%, $background-gradient-mid 46%, $background-gradient-mid 53%, $background-gradient-end 84%); 
-}
 
-.contenedor_imagenes-room img {
+
+& img {
   width: 300px;
   height: 216px;
   padding: 7px;
@@ -73,11 +73,12 @@ $font-raleway: 'Raleway', sans-serif;
   margin: 10px 0 0 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-}
 
-.contenedor_imagenes-room img:hover {
-  transform: scale(1.1);
-  padding: 0;
+  &:hover {
+    transform: scale(1.1);
+    padding: 0;
+  }
+}
 }
 
 .imagenes-room_detalles2 {
@@ -121,10 +122,10 @@ $font-raleway: 'Raleway', sans-serif;
 
   .contenedor_imagenes-room {
     width: 1000px;
-  }
 
-  .contenedor_imagenes-room img {
-    padding: 7px;
-    margin: 5px 5px 5px 5px;
+    & img {
+      padding: 7px;
+      margin: 5px 5px 5px 5px;
+    }
   }
 }

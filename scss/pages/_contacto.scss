@@ -29,27 +29,26 @@ $font-raleway: 'Raleway', sans-serif;
 .titulo_principal-contactus {
     text-align: center;
     margin: 150px 0 0 0;
-}
 
-.titulo_principal-contactus h2 {
-    font-size: $font-size-large;
-    font-style: italic;
-    color: $color-green;
-    font-family: $font-raleway;
-    opacity: 0;
-    animation: aparecer 1s forwards;
+    & h2 {
+        font-size: $font-size-large;
+        font-style: italic;
+        color: $color-green;
+        font-family: $font-raleway;
+        opacity: 0;
+        animation: aparecer 1s forwards;
+    }
+
+    & hr {
+        margin: 0 60px 40px 60px;
+        color: #768f67b9;
+    }
 }
 
 @keyframes aparecer {
-  to {
+    to {
     opacity: 1;
-  }
-}
-
-
-.titulo_principal-contactus hr {
-    margin: 0 60px 40px 60px;
-    color: #768f67b9;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -87,13 +86,13 @@ $font-raleway: 'Raleway', sans-serif;
     border-top-left-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     font-family: $font-raleway;
-}
 
-.contenedor-informacion-contactus p {
-    font-size: $font-size-small;
-    margin-bottom: 8px;
-    font-weight: 300;
-    color: white;
+    & p {
+        font-size: $font-size-small;
+        margin-bottom: 8px;
+        font-weight: 300;
+        color: white;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -156,32 +155,32 @@ $font-raleway: 'Raleway', sans-serif;
     border-top-left-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     font-family: $font-raleway;
-}
 
-.contenedor-formulario-contactus h3 {
-    text-align: center;
-    font-weight: 300;
-    font-style: italic;
-    padding: 20px 0 0 0;
-    color: white;
-}
+    & h3 {
+        text-align: center;
+        font-weight: 300;
+        font-style: italic;
+        padding: 20px 0 0 0;
+        color: white;
+    }
 
-.contenedor-formulario-contactus label {
-    width: 100%;
-    padding: 17px 0px 0 10px;
-    font-weight: 300;
-    font-size: $font-size-small;
-    color: white;
-}
+    & label {
+        width: 100%;
+        padding: 17px 0px 0 10px;
+        font-weight: 300;
+        font-size: $font-size-small;
+        color: white;
+    }
 
-.contenedor-formulario-contactus input {
-    width: 80%;
-    margin: 0 0 0 10px;
-    border: transparent;
-    padding: 5px 0 5px 0;
-    font-size: $font-size-small;
-    font-style: italic;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    & input {
+        width: 80%;
+        margin: 0 0 0 10px;
+        border: transparent;
+        padding: 5px 0 5px 0;
+        font-size: $font-size-small;
+        font-style: italic;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
 }
 
 #message-input {
@@ -195,11 +194,11 @@ $font-raleway: 'Raleway', sans-serif;
     border: 1px solid $color-submit-border;
     color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
 
-#submit-input:hover {
-    background-color: $color-submit-hover;
-    color: $color-info-text;
+    &:hover {
+        background-color: $color-submit-hover;
+        color: $color-info-text;
+    }
 }
 
 @media (min-width: 768px) {
@@ -224,15 +223,15 @@ $font-raleway: 'Raleway', sans-serif;
 .imagen_final-logo-mobile {
     display: block;
     text-align: center;
+
+    & img {
+        width: 130px;
+        height: 100px;
+    }
 }
 
 .imagen_final-logo-desktop {
     display: none;
-}
-
-.imagen_final-logo-mobile img {
-    width: 130px;
-    height: 100px;
 }
 
 @media (min-width: 1200px) {

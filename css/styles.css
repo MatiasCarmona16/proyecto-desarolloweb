@@ -187,7 +187,7 @@ hr {
 
 #body_contactus_background {
   background: rgb(204, 234, 186);
-  background: linear-gradient(180deg, rgba(204, 234, 186, 0.9220063025) 4%, rgb(255, 255, 255) 23%, rgb(255, 255, 255) 67%, rgba(199, 232, 179, 0.9108018207) 81%);
+  background: linear-gradient(180deg, rgba(204, 234, 186, 0.9220063025) 4%, rgb(255, 255, 255) 23%, rgb(255, 255, 255) 67%, rgba(199, 232, 179, 0.527) 81%);
 }
 
 hr {
@@ -202,6 +202,12 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   height: 55vh;
+}
+
+.sec-main__fotodeportada h1 {
+  position: absolute;
+  color: transparent;
+  background-color: transparent;
 }
 
 .sec-main__fotodeportada h2 {
@@ -239,7 +245,7 @@ hr {
   border-radius: 4px;
   font-family: "Raleway", sans-serif;
   opacity: 0;
-  animation: aparecer 1s forwards;
+  animation: aparecer 3s forwards;
 }
 
 @keyframes aparecer {
@@ -602,10 +608,14 @@ hr {
 /* ----------------REVIEWS MAIN MOBILE Y DESKTOP----------------------*/
 #hrrev {
   display: block;
-  margin: 90px 40px 0 40px;
+  margin: 90px 0 0 0;
   text-align: center;
   color: rgba(97, 136, 87, 0.466);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.reviews {
+  background-color: rgba(110, 161, 97, 0.199);
 }
 
 .reviews h3 {
@@ -637,7 +647,7 @@ hr {
   font-family: "Raleway", sans-serif;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   height: 340px;
-  background-color: rgba(255, 255, 255, 0.4235294118);
+  background-color: rgba(255, 255, 255, 0.7529411765);
 }
 
 .rev h5 {
@@ -666,9 +676,10 @@ hr {
   .reviews h3 {
     display: block;
     text-align: center;
-    margin: 140px 0 0 0;
+    margin: 120px 0 0 0;
     font-size: 35px;
     font-weight: 300;
+    padding: 50px 0 0 0;
   }
   .reviews h4 {
     display: none;
@@ -680,7 +691,7 @@ hr {
   }
   .rev {
     padding: 2rem;
-    max-width: 450px;
+    max-width: 430px;
     height: 410px;
     margin: 60px 50px 80px 50px;
   }
@@ -707,7 +718,7 @@ hr {
 /*-------------------ABOUT US MAIN MOBILE Y DESKTOP--------------------*/
 .titulo-secundario-aboutus h3 {
   display: block;
-  margin: 20px 0 0 25px;
+  margin: 50px 0 0 25px;
   font-style: italic;
   font-weight: 300;
   font-family: "Raleway", sans-serif;
@@ -855,7 +866,6 @@ hr {
   border-radius: 4px;
   background: linear-gradient(180deg, rgb(255, 255, 255) 11%, rgb(208, 226, 201) 46%, rgb(208, 226, 201) 53%, rgb(255, 255, 255) 84%);
 }
-
 .contenedor_imagenes-room img {
   width: 300px;
   height: 216px;
@@ -865,7 +875,6 @@ hr {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
-
 .contenedor_imagenes-room img:hover {
   transform: scale(1.1);
   padding: 0;
@@ -919,7 +928,6 @@ hr {
   text-align: center;
   margin: 150px 0 0 0;
 }
-
 .titulo_principal h2 {
   font-size: 25px;
   font-style: italic;
@@ -961,7 +969,6 @@ hr {
   background: rgba(255, 255, 255, 0.7805497199);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.7805497199) 25%, rgba(199, 232, 179, 0.6825105042) 64%, rgba(199, 232, 179, 0.5256477591) 96%, rgba(255, 255, 255, 0.7861519608) 99%);
 }
-
 .contenido_secundario-gym h3 {
   text-align: center;
   background: rgba(110, 161, 97, 0.473);
@@ -974,7 +981,6 @@ hr {
   color: #ffffff;
   font-family: "Raleway", sans-serif;
 }
-
 .contenido_secundario-gym img {
   width: 350px;
   height: 230px;
@@ -1028,7 +1034,6 @@ hr {
   margin: 125px 0 0 0;
   padding: 10px;
 }
-
 .contenido_secundario-restaurant-primer-div img {
   width: 250px;
   height: 150px;
@@ -1049,7 +1054,6 @@ hr {
   color: #ffffff;
   font-family: "Raleway", sans-serif;
 }
-
 .contenido_secundario-restaurant-primer-div a:hover {
   background-color: rgba(94, 113, 82, 0.7254901961);
   color: white;
@@ -1064,7 +1068,6 @@ hr {
   padding: 10px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
 }
-
 .contenido_secundario-restaurant-segundo-div img {
   width: 150px;
   height: 130px;
@@ -1185,7 +1188,6 @@ hr {
   background: rgba(255, 255, 255, 0.7805497199);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.7805497199) 6%, rgba(199, 232, 179, 0.6825105042) 11%, rgba(199, 232, 179, 0.5256477591) 93%, rgba(255, 255, 255, 0.7861519608) 97%);
 }
-
 .contenido_secundario-events h3 {
   display: block;
   text-align: center;
@@ -1198,9 +1200,12 @@ hr {
   border-radius: 10px;
   padding: 0 0 5px 0;
 }
-
 .contenido_secundario-events hr {
   display: none;
+}
+.contenido_secundario-events img {
+  width: 350px;
+  height: 230px;
 }
 
 #hr_event_segundo {
@@ -1212,11 +1217,6 @@ hr {
   color: rgba(118, 143, 103, 0.7254901961);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.contenido_secundario-events img {
-  width: 350px;
-  height: 230px;
 }
 
 @media (min-width: 768px) {
@@ -1355,7 +1355,6 @@ hr {
   display: block;
   text-align: center;
 }
-
 .imagen_final-logo img {
   width: 130px;
   height: 100px;
@@ -1377,7 +1376,6 @@ hr {
   text-align: center;
   margin: 150px 0 0 0;
 }
-
 .titulo_principal-reservations h2 {
   font-size: 25px;
   font-style: italic;
@@ -1386,39 +1384,35 @@ hr {
   opacity: 0;
   animation: aparecer 1s forwards;
 }
+.titulo_principal-reservations hr {
+  margin: 0 40px 0 40px;
+  color: rgba(118, 143, 103, 0.7254901961);
+}
 
 @keyframes aparecer {
   to {
     opacity: 1;
   }
 }
-.titulo_principal-reservations hr {
-  margin: 0 40px 0 40px;
-  color: rgba(118, 143, 103, 0.7254901961);
-}
-
 .inputs_reservations {
   display: block;
   text-align: center;
   margin: 35px 0 0 0;
   font-family: "Raleway", sans-serif;
 }
-
 .inputs_reservations select {
   padding: 7px 25px 7px 25px;
   text-align: center;
   width: 240px;
   margin: 5px 0 0 0;
   background-color: white;
-  color: black;
+  color: rgb(0, 0, 0);
   border: 1px solid rgb(168, 168, 168);
   border-radius: 2px;
 }
-
 .inputs_reservations option {
   text-align: center;
 }
-
 .inputs_reservations input {
   margin: 23px 0 0 0;
   padding: 7px 50px 7px 50px;
@@ -1429,12 +1423,10 @@ hr {
   border: 1px solid rgb(168, 168, 168);
   border-radius: 2px;
 }
-
 .inputs_reservations hr {
   margin: 40px 25px 0 25px;
   color: rgba(118, 143, 103, 0.7254901961);
 }
-
 .inputs_reservations a {
   position: relative;
   bottom: 13px;
@@ -1447,7 +1439,6 @@ hr {
   border-radius: 5px;
   color: white;
 }
-
 .inputs_reservations a:hover {
   background-color: #6e8b5d;
   color: white;
@@ -1500,7 +1491,6 @@ hr {
   margin: 70px 0 0 0;
   font-family: "Raleway", sans-serif;
 }
-
 .contenedor_etiqueta_reservation h3 {
   border-style: double;
   border-top: transparent;
@@ -1526,11 +1516,9 @@ hr {
   overflow: hidden;
   transition: transform 0.3s ease;
 }
-
 .contenedor_etiqueta_reservation-elementos:hover {
   transform: scale(1.1);
 }
-
 .contenedor_etiqueta_reservation-elementos h4 {
   padding: 8px 0 0 10px;
   font-size: 18px;
@@ -1538,7 +1526,6 @@ hr {
   font-style: italic;
   color: rgb(96, 117, 91);
 }
-
 .contenedor_etiqueta_reservation-elementos img {
   height: 110px;
   width: 170px;
@@ -1554,14 +1541,12 @@ hr {
   flex-direction: column;
   width: 100%;
 }
-
 .contenido_etiqueta_subelementos h5 {
   font-size: 13px;
   padding: 0 0 0 5px;
   margin: 6px 0 0 0;
   color: black;
 }
-
 .contenido_etiqueta_subelementos a {
   font-size: 13px;
   padding: 0 20px 0 5px;
@@ -1569,11 +1554,9 @@ hr {
   margin: 0;
   width: 70%;
 }
-
 .contenido_etiqueta_subelementos a:hover {
   color: rgb(0, 0, 0);
 }
-
 .contenido_etiqueta_subelementos p {
   text-align: end;
   margin: 14px 10px 5px 0;
@@ -1591,12 +1574,18 @@ hr {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   color: white;
 }
-
 #subelemento-boton:hover {
   background-color: #6e8b5d;
   color: white;
 }
 
+@media (min-width: 768px) {
+  .contenedor_etiqueta_reservation-elementos {
+    height: 166px;
+    margin: 15px 0 25px 40px;
+    width: 87%;
+  }
+}
 @media (min-width: 1200px) {
   .contenedor_etiqueta_reservation h3 {
     margin: 20px 800px 0 20px;
@@ -1605,7 +1594,8 @@ hr {
   }
   .contenedor_etiqueta_reservation-elementos {
     height: 200px;
-    margin: 15px 0 25px 60px;
+    margin: 15px 0 25px 65px;
+    width: 88%;
   }
   .contenedor_etiqueta_reservation-elementos h4 {
     position: relative;
@@ -1636,6 +1626,13 @@ hr {
     font-size: 24px;
   }
 }
+@media (min-width: 1800px) {
+  .contenedor_etiqueta_reservation-elementos {
+    height: 200px;
+    margin: 20px 0 35px 90px;
+    width: 85%;
+  }
+}
 /* Variables para fuentes*/
 /* Variables para colores*/
 /* Variables para colores de fondo*/
@@ -1645,7 +1642,6 @@ hr {
   text-align: center;
   margin: 150px 0 0 0;
 }
-
 .titulo_principal-contactus h2 {
   font-size: 25px;
   font-style: italic;
@@ -1654,17 +1650,16 @@ hr {
   opacity: 0;
   animation: aparecer 1s forwards;
 }
+.titulo_principal-contactus hr {
+  margin: 0 60px 40px 60px;
+  color: rgba(118, 143, 103, 0.7254901961);
+}
 
 @keyframes aparecer {
   to {
     opacity: 1;
   }
 }
-.titulo_principal-contactus hr {
-  margin: 0 60px 40px 60px;
-  color: rgba(118, 143, 103, 0.7254901961);
-}
-
 @media (min-width: 1200px) {
   .titulo_principal-contactus {
     margin: 150px 0 0 0;
@@ -1697,7 +1692,6 @@ hr {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   font-family: "Raleway", sans-serif;
 }
-
 .contenedor-informacion-contactus p {
   font-size: 14px;
   margin-bottom: 8px;
@@ -1759,7 +1753,6 @@ hr {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   font-family: "Raleway", sans-serif;
 }
-
 .contenedor-formulario-contactus h3 {
   text-align: center;
   font-weight: 300;
@@ -1767,7 +1760,6 @@ hr {
   padding: 20px 0 0 0;
   color: white;
 }
-
 .contenedor-formulario-contactus label {
   width: 100%;
   padding: 17px 0px 0 10px;
@@ -1775,7 +1767,6 @@ hr {
   font-size: 14px;
   color: white;
 }
-
 .contenedor-formulario-contactus input {
   width: 80%;
   margin: 0 0 0 10px;
@@ -1798,7 +1789,6 @@ hr {
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
 #submit-input:hover {
   background-color: #98c081;
   color: rgb(53, 68, 49);
@@ -1823,14 +1813,13 @@ hr {
   display: block;
   text-align: center;
 }
-
-.imagen_final-logo-desktop {
-  display: none;
-}
-
 .imagen_final-logo-mobile img {
   width: 130px;
   height: 100px;
+}
+
+.imagen_final-logo-desktop {
+  display: none;
 }
 
 @media (min-width: 1200px) {

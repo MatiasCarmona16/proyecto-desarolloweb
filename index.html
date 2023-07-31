@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Holiday Inn Cba</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon"
@@ -13,6 +12,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+        <meta name="description" content="Bienvenido a nuestro hotel, donde encontrarás habitaciones cómodas y acogedoras, servicios de calidad y una ubicación privilegiada. Descubre nuestras amplias habitaciones, disfruta de servicios de lujo como piscina, spa y restaurante, y explora los alrededores del hotel, situado en una zona tranquila y de fácil acceso. ¡Haz tu reserva ahora y vive una experiencia inolvidable en nuestro hotel de ensueño!">
+        <title>Hotel Holiday Inn Cordoba| Come and meet us!
+        </title>
 </head>
 
 <body id="pagina_index">
@@ -53,6 +55,7 @@
 
         <section class="sec-main__fotodeportada">
             <div class="green-block">
+                <h1>Hotel Holiday Inn Cordoba</h1>
                 <h2>¡Welcome!</h2>
             </div>
             
@@ -69,7 +72,7 @@
 
             <div class="gridbotonreservar">
             <div class="botonreservarubicacion">
-                <a>Reserv</a>
+                <a href="./pages/reservations.html">Reserv</a>
             </div>
             </div>
             
@@ -94,16 +97,16 @@
                 </div>
                 <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/habitacion-dosnoche.jpg" class="d-block rounded" alt="habitacion estandar con cama king">
+                    <img src="./img/habitacion-dosnoche.jpg" class="d-block rounded" alt="Habitacion standard con cama King">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/baño-dos.jpg" class="d-block rounded" alt="Baño de habitacion estandar">
+                    <img src="./img/baño-dos.jpg" class="d-block rounded" alt="Baño de habitacion standard">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/habitacion-uno.jpg" class="d-block rounded" alt="habitacion estandar con dos camas quinn">
+                    <img src="./img/habitacion-uno.jpg" class="d-block rounded" alt="Habitacion ejecutiva twin con dos camas queen">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/baño-tres.jpg" class="d-block rounded" alt="Jacuzzi de habitacion estandar">
+                    <img src="./img/baño-tres.jpg" class="d-block rounded" alt="Jacuzzi de habitacion suite ejecutiva">
                 </div>
                 </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -121,15 +124,15 @@
         <section class="seccionroomsdesktop">  
 
             <div class="rooms-details">
-                <img src="./img/habitacion-dosnoche.jpg" alt="comida1">
+                <a href="./pages/rooms.html"><img src="./img/habitacion-dosnoche.jpg" alt="Habitacion standard con cama King"></a>
             </div>
 
             <div class="rooms-details">
-                <img src="./img/suite-ejec-534x303.jpg" alt="comida2">
+                <a href="./pages/rooms.html"><img src="./img/suite-ejec-534x303.jpg" alt="Habitacion suite ejecutiva"></a>
             </div>
 
             <div class="rooms-details">
-                <img src="./img/habitacion-uno.jpg" alt="comida3">
+                <a href="./pages/rooms.html"><img src="./img/habitacion-uno.jpg" alt="Habitacion ejecutiva twin con dos camas queen"></a>
             </div>
 
         </section>
@@ -142,10 +145,18 @@
         
         </section>
         <section class="contenedorserv">
-                <div class="posimg"><img class="imgserimg" src="./img/gimnasio.jpg" alt="cintas de gimnasio"></div>
-                <div><img class="imgserimg" src="./img/Gym2.jpg" alt="maquinas de polea en el gym"></div>
-                <div class="posimg"><img class="imgserimg" src="./img/comida.jpg" alt="menu de comida en mesa"></div>
-                <div><img class="imgserimg" src="./img/restaurant_hoteldolidayinncba.jpg" alt="restaurant holiday inn"></div>
+                <div class="posimg">
+                    <a href="./pages/service.html"><img class="imgserimg" src="./img/gimnasio.jpg" alt="Cintas de gimnasio"></a>
+                </div>
+                <div>
+                    <a href="./pages/service.html"><img class="imgserimg" src="./img/Gym2.jpg" alt="Maquinas de polea en gimnasio"></a>
+                </div>
+                <div class="posimg">
+                    <a href="./pages/service.html"><img class="imgserimg" src="./img/comida.jpg" alt="Menu plato principal restaurant"></a>
+                </div>
+                <div>
+                    <a href="./pages/service.html"><img class="imgserimg" src="./img/restaurant_hoteldolidayinncba.jpg" alt="Restaurant del holiday inn"></a>
+                </div>
                 
         </section>
     
@@ -221,12 +232,12 @@
     <footer>
         <div class="footer_espaciado-elementos">
         <div>
-            <h4>Hotel Holiday Inn Cordoba</h4>
+            <a href="./index.html"><h4>Hotel Holiday Inn Cordoba</h4></a>
             <ul>
-                <li>Rooms</li>
-                <li>Services</li>
-                <li>About us</li>
-                <li>Reservations</li>
+                <a href="./pages/rooms.html"><li>Rooms</li></a>
+                <a href="./pages/service.html"><li>Services</li></a>
+                <a href="./pages/reservations.html"><li>Reservations</li></a>
+                <a href="./pages/contacto.html"><li>Contact us</li></a>
             </ul>
         </div>
         </div>

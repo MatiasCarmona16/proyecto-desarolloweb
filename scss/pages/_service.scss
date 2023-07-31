@@ -17,26 +17,27 @@ $font-raleway: 'Raleway', sans-serif;
 .titulo_principal {
     text-align: center;
     margin: 150px 0 0 0;
+    
+    & h2 {
+        font-size: $font-size-title;
+        font-style: italic;
+        color: $primary-color;
+        border-bottom: 2px solid #829c72;
+        border-radius: 5px;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+        margin: 40px 30px 15px 30px;
+        padding: 0 0 5px 0;
+        font-family: $font-raleway;
+        opacity: 0;
+        animation: aparecer 1s forwards;
+    }
 }
 
-.titulo_principal h2 {
-    font-size: $font-size-title;
-    font-style: italic;
-    color: $primary-color;
-    border-bottom: 2px solid #829c72;
-    border-radius: 5px;
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
-    margin: 40px 30px 15px 30px;
-    padding: 0 0 5px 0;
-    font-family: $font-raleway;
-    opacity: 0;
-    animation: aparecer 1s forwards;
-}
 
 @keyframes aparecer {
-  to {
+    to {
     opacity: 1;
-  }
+    }
 }
 
 @media (min-width: 768px) {
@@ -64,24 +65,24 @@ $font-raleway: 'Raleway', sans-serif;
     margin: 50px 0 0 0;
     background: $background-color-1;
     background: linear-gradient(180deg, $background-color-1 25%, $background-color-2 64%, $background-color-3 96%, $background-color-4 99%);
-}
 
-.contenido_secundario-gym h3 {
-    text-align: center;
-    background: rgba(110, 161, 97, 0.473);
-    font-weight: 400;
-    font-style: italic;
-    font-size: 18px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 6px;
-    margin: 0 0 20px 0;
-    color: #ffffff;
-    font-family: $font-raleway;
-}
+    & h3 {
+        text-align: center;
+        background: rgba(110, 161, 97, 0.473);
+        font-weight: 400;
+        font-style: italic;
+        font-size: 18px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 6px;
+        margin: 0 0 20px 0;
+        color: #ffffff;
+        font-family: $font-raleway;
+    }
 
-.contenido_secundario-gym img {
-    width: 350px;
-    height: 230px;
+    & img {
+        width: 350px;
+        height: 230px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -137,16 +138,16 @@ $font-raleway: 'Raleway', sans-serif;
     height: 55px;
     margin: 125px 0 0 0;
     padding: 10px;
-}
 
-.contenido_secundario-restaurant-primer-div img {
-    width: 250px;
-    height: 150px;
-    position: relative;
-    bottom: 105px;
-    padding: 5px;
-    background: $secondary-color;
-    border-radius: 10px;
+    & img {
+        width: 250px;
+        height: 150px;
+        position: relative;
+        bottom: 105px;
+        padding: 5px;
+        background: $secondary-color;
+        border-radius: 10px;
+    }
 }
 
 .contenido_secundario-restaurant-primer-div a {
@@ -158,11 +159,11 @@ $font-raleway: 'Raleway', sans-serif;
     font-style: italic;
     color: #ffffff;
     font-family: $font-raleway;
-}
 
-.contenido_secundario-restaurant-primer-div a:hover{
-    background-color: darken($secondary-color, 10%);
-    color: white;
+    &:hover{
+        background-color: darken($secondary-color, 10%);
+        color: white;
+    }
 }
 
 .contenido_secundario-restaurant-segundo-div {
@@ -173,17 +174,17 @@ $font-raleway: 'Raleway', sans-serif;
     margin: 0 0 125px 0;
     padding: 10px;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
-}
 
-.contenido_secundario-restaurant-segundo-div img {
-    width: 150px;
-    height: 130px;
-    position: relative;
-    bottom: 1px;
-    margin: 0 0 0 25px;
-    padding: 5px;
-    background: $secondary-color;
-    border-radius: 10px;
+    & img {
+        width: 150px;
+        height: 130px;
+        position: relative;
+        bottom: 1px;
+        margin: 0 0 0 25px;
+        padding: 5px;
+        background: $secondary-color;
+        border-radius: 10px;
+    }
 }
 
 #imagen_comida_desktop {
@@ -314,23 +315,28 @@ $font-raleway: 'Raleway', sans-serif;
 .contenido_secundario-events {
     background: $background-color-1;
     background: linear-gradient(180deg, $background-color-1 6%, $background-color-2 11%, $background-color-3 93%, $background-color-4 97%);
-}
 
-.contenido_secundario-events h3 {
-    display: block;
-    text-align: center;
-    font-family: $font-raleway;
-    margin: 150px 20px 20px 20px ;
-    font-size: 19px;
-    font-style: italic;
-    font-weight: 400;
-    border-bottom: 2px solid $secondary-color;
-    border-radius: 10px;
-    padding: 0 0 5px 0;
-}
+    & h3 {
+        display: block;
+        text-align: center;
+        font-family: $font-raleway;
+        margin: 150px 20px 20px 20px ;
+        font-size: 19px;
+        font-style: italic;
+        font-weight: 400;
+        border-bottom: 2px solid $secondary-color;
+        border-radius: 10px;
+        padding: 0 0 5px 0;
+    }
 
-.contenido_secundario-events hr {
-    display: none;
+    & hr {
+        display: none;
+    }
+
+    & img {
+        width: 350px;
+        height: 230px;
+    }
 }
 
 #hr_event_segundo {
@@ -342,11 +348,6 @@ $font-raleway: 'Raleway', sans-serif;
     color: $secondary-color;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.contenido_secundario-events img {
-    width: 350px;
-    height: 230px;
 }
 
 @media (min-width: 768px) {
@@ -501,11 +502,11 @@ $font-raleway: 'Raleway', sans-serif;
 .imagen_final-logo {
     display: block;
     text-align: center;
-}
 
-.imagen_final-logo img {
-    width: 130px;
-    height: 100px;
+    & img {
+        width: 130px;
+        height: 100px;
+    }
 }
 
 @media(min-width:1200px) {
