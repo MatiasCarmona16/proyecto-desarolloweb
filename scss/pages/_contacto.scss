@@ -36,7 +36,16 @@ $font-raleway: 'Raleway', sans-serif;
     font-style: italic;
     color: $color-green;
     font-family: $font-raleway;
+    opacity: 0;
+    animation: aparecer 1s forwards;
 }
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
+
 
 .titulo_principal-contactus hr {
     margin: 0 60px 40px 60px;
@@ -97,7 +106,7 @@ $font-raleway: 'Raleway', sans-serif;
     .contenedor-informacion-contactus {
         margin: 30px 20px 0 20px;
         height: 200px;
-        padding: 40px 0px 0 10px;
+        padding: 50px 0px 0 10px;
     }
 
     .contenedor-informacion-contactus p {
@@ -119,7 +128,8 @@ $font-raleway: 'Raleway', sans-serif;
 @media (min-width: 1200px) {
     #mapa-contactus-desktop {
         display: inline-block;
-        margin: 0 0 60px 0;
+        margin: 30px 0 60px 0;
+        height: 430px;
     }
 
     #mapa-contactus-mobile {
@@ -190,6 +200,12 @@ $font-raleway: 'Raleway', sans-serif;
 #submit-input:hover {
     background-color: $color-submit-hover;
     color: $color-info-text;
+}
+
+@media (min-width: 768px) {
+    .contenedor-formulario-contactus input {
+        width: 90%;
+    }
 }
 
 @media (min-width: 1200px) {

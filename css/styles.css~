@@ -219,14 +219,6 @@ hr {
   color: black;
 }
 
-input[type=date] {
-  padding-inline-start: 1px;
-  overflow: hidden;
-  padding: 4px;
-  color: black;
-  background-color: white;
-}
-
 .sec-main__reservas input:hover {
   border: 1px solid rgba(65, 94, 58, 0.788);
 }

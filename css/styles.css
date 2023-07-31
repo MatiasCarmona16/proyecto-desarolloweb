@@ -21,9 +21,11 @@ header .navbar-expand-lg .navbar-nav .nav-link {
   font-size: 18px;
   padding: 15px 0 0 0;
   font-family: "Raleway", sans-serif;
+  transition: transform 0.3s ease;
 }
 header .navbar-expand-lg .navbar-nav .nav-link:hover {
   color: rgb(159, 182, 161);
+  transform: scale(1.1);
 }
 @media (min-width: 990px) {
   header .navbar-expand-lg .navbar-nav .nav-link {
@@ -36,9 +38,11 @@ header .navbar-expand-lg .navbar-brand {
   font-size: 20px;
   padding: 0;
   font-family: "Raleway", sans-serif;
+  transition: transform 0.3s ease;
 }
 header .navbar-expand-lg .navbar-brand:hover {
-  color: rgb(159, 182, 161);
+  color: white;
+  transform: scale(1.1);
 }
 @media (min-width: 1200px) {
   header .navbar-expand-lg .navbar-brand {
@@ -64,10 +68,21 @@ footer h4 {
   width: 100px;
   font-weight: 500;
 }
+@media (min-width: 768px) {
+  footer h4 {
+    font-size: 17px;
+    width: 120px;
+  }
+}
 footer ul {
   display: grid;
   font-size: 12px;
   font-style: italic;
+}
+@media (min-width: 768px) {
+  footer ul {
+    font-size: 14px;
+  }
 }
 footer.footer_contactos {
   display: grid;
@@ -83,6 +98,11 @@ footer img {
   position: relative;
   left: 65px;
   top: 10px;
+}
+@media (min-width: 688px) {
+  footer img {
+    top: -20px;
+  }
 }
 @media (min-width: 1200px) {
   footer {
@@ -181,18 +201,29 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 45vh;
+  height: 55vh;
 }
 
 .sec-main__fotodeportada h2 {
   text-align: center;
-  padding-top: 9rem;
-  font-size: 30px;
+  padding-top: 12rem;
+  font-size: 35px;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
   color: #ffffff;
+  animation: fadeInUp 1s ease-in-out;
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .sec-main__reservas {
   display: grid;
   grid-template-columns: 1fr;
@@ -207,8 +238,15 @@ hr {
   padding: 6px 0 6px 0;
   border-radius: 4px;
   font-family: "Raleway", sans-serif;
+  opacity: 0;
+  animation: aparecer 1s forwards;
 }
 
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
 .sec-main__reservas input {
   margin: 0 10px 0 10px;
   border-radius: 3px;
@@ -252,13 +290,28 @@ hr {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: black;
   text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 .sec-main__reservas a:hover {
   color: rgba(110, 158, 98, 0.884);
   border: 1px solid rgba(65, 94, 58, 0.788);
+  transform: scale(1.1);
 }
 
+@media (min-width: 768px) {
+  .sec-main__fotodeportada h2 {
+    text-align: center;
+    padding-top: 17rem;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+  }
+  .sec-main__fotodeportada {
+    height: 75vh;
+  }
+}
 @media (min-width: 1200px) {
   .sec-main__fotodeportada {
     height: 96vh;
@@ -281,6 +334,10 @@ hr {
     padding: 10px 70px 10px 70px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 15px;
+    transition: transform 0.3s ease;
+  }
+  .sec-main__reservas input:hover {
+    transform: scale(1.1);
   }
   .reservas__botonubicacion {
     font-size: 15px;
@@ -338,6 +395,11 @@ hr {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+.seccionrooms img {
+  width: 350px;
+  height: 230px;
+}
+
 .seccionroomsdesktop {
   display: none;
 }
@@ -346,6 +408,12 @@ hr {
   background-color: #d5ffbc;
 }
 
+@media (min-width: 768px) {
+  .seccionrooms img {
+    width: 500px;
+    height: 330px;
+  }
+}
 @media (min-width: 1200px) {
   .titulo-secundario-room h3 {
     font-size: 35px;
@@ -376,6 +444,10 @@ hr {
     width: 350px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+  .rooms-details img:hover {
+    transform: scale(1.2);
   }
 }
 @media (min-width: 1600px) {
@@ -413,9 +485,16 @@ hr {
   margin: 0 0 90px 0;
 }
 
+.contenedorserv img {
+  transition: transform 0.3s ease;
+}
+
+.contenedorserv img:hover {
+  transform: scale(1.1);
+}
+
 .imgserimg {
   display: grid;
-  width: 100%;
   max-width: 150px;
   height: 150px;
   object-fit: cover;
@@ -428,6 +507,18 @@ hr {
   justify-items: end;
 }
 
+@media (min-width: 768px) {
+  .imgserimg {
+    max-width: 250px;
+    height: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  }
+  .contenedorserv {
+    row-gap: 40px;
+    column-gap: 90px;
+    margin: 0 0 90px 0;
+  }
+}
 @media (min-width: 1200px) {
   .titulo-secunadario-service h3 {
     margin: 130px 0 0 0;
@@ -438,16 +529,27 @@ hr {
     display: none;
   }
   .contenedorserv {
-    row-gap: 40px;
-    margin: 0 0 0 0;
+    row-gap: 60px;
     column-gap: 150px;
     background-color: rgba(110, 161, 97, 0.199);
     padding: 50px 0 70px 0;
+    margin: 0;
+  }
+  .contenedorserv img {
+    transition: transform 0.6s ease;
+    animation: agrandarAchicar 3s infinite alternate;
+  }
+  @keyframes agrandarAchicar {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
   }
   .imgserimg {
     max-width: 400px;
     height: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   }
 }
 /*---------------UBICACION MAIN MOBILE Y DESKTOP----------------------*/
@@ -713,8 +815,15 @@ hr {
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
   padding: 0 0 5px 0;
   font-family: "Raleway", sans-serif;
+  opacity: 0;
+  animation: aparecer 1s forwards;
 }
 
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
 .input_selectorhabitacion {
   display: block;
   text-align: center;
@@ -744,22 +853,37 @@ hr {
   margin-right: auto;
   margin-bottom: 80px;
   border-radius: 4px;
-  background: linear-gradient(180deg, rgb(255, 255, 255) 11%, rgb(208, 226, 201) 46%, rgb(208, 226, 201) 53%, rgb(255, 255, 255) 84%); /* Usamos las variables para los colores de fondo */
+  background: linear-gradient(180deg, rgb(255, 255, 255) 11%, rgb(208, 226, 201) 46%, rgb(208, 226, 201) 53%, rgb(255, 255, 255) 84%);
 }
 
 .contenedor_imagenes-room img {
   width: 300px;
   height: 216px;
-  padding: 4px;
+  padding: 7px;
   border: 1px solid transparent;
   margin: 10px 0 0 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contenedor_imagenes-room img:hover {
+  transform: scale(1.1);
+  padding: 0;
 }
 
 .imagenes-room_detalles2 {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .titulo-principa-opciones-de-habitacion h2 {
+    margin: 150px 150px 15px 150px;
+    padding: 0 0 5px 0;
+  }
+  .contenedor_imagenes-room {
+    width: 500px;
+  }
+}
 @media (min-width: 1200px) {
   .titulo-principa-opciones-de-habitacion h2 {
     margin: 150px 500px 0 500px;
@@ -783,6 +907,10 @@ hr {
   .contenedor_imagenes-room {
     width: 1000px;
   }
+  .contenedor_imagenes-room img {
+    padding: 7px;
+    margin: 5px 5px 5px 5px;
+  }
 }
 /* Variables */
 /*-------------------VERSION MOBILE Y DESKTOP "PAGE SERVICES"----------------------*/
@@ -802,8 +930,20 @@ hr {
   margin: 40px 30px 15px 30px;
   padding: 0 0 5px 0;
   font-family: "Raleway", sans-serif;
+  opacity: 0;
+  animation: aparecer 1s forwards;
 }
 
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .titulo_principal {
+    margin: 150px 150px 15px 150px;
+  }
+}
 @media (min-width: 1200px) {
   .titulo_principal {
     margin: 150px 500px 0 500px;
@@ -840,6 +980,16 @@ hr {
   height: 230px;
 }
 
+@media (min-width: 768px) {
+  .contenido_secundario-gym h3 {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .contenido_secundario-gym img {
+    width: 400px;
+    height: 270px;
+  }
+}
 @media (min-width: 1200px) {
   .contenido_secundario-gym h3 {
     font-size: 25px;
@@ -930,6 +1080,50 @@ hr {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .contenido_secundario-restaurant h3 {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .contenido_secundario-restaurant-primer-div {
+    height: 155px;
+    padding: 10px;
+  }
+  .contenido_secundario-restaurant-primer-div img {
+    width: 450px;
+    height: 250px;
+    bottom: 105px;
+    left: 17px;
+    transition: transform 0.3s ease;
+  }
+  .contenido_secundario-restaurant-primer-div img:hover {
+    transform: scale(1.1);
+  }
+  .contenido_secundario-restaurant-primer-div a {
+    font-size: 15px;
+    padding: 35px 20px 3px 20px;
+    margin: 20px 0 20px 50px;
+  }
+  #imagen_comida_desktop {
+    display: flex;
+  }
+  .contenido_secundario-restaurant-segundo-div {
+    height: 80px;
+    margin: 40px 0 125px 0;
+    padding: 10px;
+    justify-content: space-evenly;
+  }
+  .contenido_secundario-restaurant-segundo-div img {
+    width: 170px;
+    height: 150px;
+    top: 10px;
+    margin: 0 0 0 15px;
+    transition: transform 0.3s ease;
+  }
+  .contenido_secundario-restaurant-segundo-div img:hover {
+    transform: scale(1.2);
+  }
+}
 @media (min-width: 1200px) {
   .contenido_secundario-restaurant h3 {
     font-size: 25px;
@@ -961,9 +1155,7 @@ hr {
     width: 250px;
     height: 200px;
     margin: 0;
-  }
-  #imagen_comida_desktop {
-    display: flex;
+    top: 0;
   }
 }
 @media (min-width: 1500px) {
@@ -1027,6 +1219,16 @@ hr {
   height: 230px;
 }
 
+@media (min-width: 768px) {
+  .contenido_secundario-events h3 {
+    font-size: 20px;
+    margin: 180px 20px 20px 20px;
+  }
+  .contenido_secundario-events img {
+    width: 400px;
+    height: 270px;
+  }
+}
 @media (min-width: 1200px) {
   .contenido_secundario-events img {
     width: 490px;
@@ -1092,8 +1294,18 @@ hr {
   height: 200px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s ease;
+  animation: agrandarAchicar 3s infinite alternate;
 }
 
+@keyframes agrandarAchicar {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
 #contenido-imagenes-imagengrande {
   width: 320px;
   height: 230px;
@@ -1102,6 +1314,24 @@ hr {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+@media (min-width: 768px) {
+  .contenido_secundario-ourpool h3 {
+    font-size: 20px;
+    margin: 80px 40px 0 40px;
+  }
+  .contenido_secundario-ourpool-contenedor-imagenes {
+    margin: 35px 50px 0 50px;
+  }
+  .contenido_secundario-ourpool img {
+    width: 370px;
+    height: 250px;
+  }
+  #contenido-imagenes-imagengrande {
+    width: 500px;
+    height: 300px;
+    margin: 15px 0 60px 0;
+  }
+}
 @media (min-width: 1200px) {
   .contenido_secundario-ourpool h3 {
     font-size: 25px;
@@ -1153,8 +1383,15 @@ hr {
   font-style: italic;
   color: #829c72;
   font-family: "Raleway", sans-serif;
+  opacity: 0;
+  animation: aparecer 1s forwards;
 }
 
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
 .titulo_principal-reservations hr {
   margin: 0 40px 0 40px;
   color: rgba(118, 143, 103, 0.7254901961);
@@ -1208,7 +1445,6 @@ hr {
   border: 1px solid rgb(255, 255, 255);
   font-style: italic;
   border-radius: 5px;
-  color: #000;
   color: white;
 }
 
@@ -1234,11 +1470,19 @@ hr {
     margin: 0 15px 0 15px;
     padding: 10px 35px 10px 35px;
     font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  .inputs_reservations select:hover {
+    transform: scale(1.1);
   }
   .inputs_reservations input {
     margin: 0 15px 0 15px;
     padding: 9px 60px 8px 60px;
     font-size: 18px;
+    transition: transform 0.3s ease;
+  }
+  .inputs_reservations input:hover {
+    transform: scale(1.1);
   }
   .inputs_reservations hr {
     margin: 60px 20px 0 20px;
@@ -1280,6 +1524,11 @@ hr {
   border-radius: 5px;
   border-top-right-radius: 20px;
   overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.contenedor_etiqueta_reservation-elementos:hover {
+  transform: scale(1.1);
 }
 
 .contenedor_etiqueta_reservation-elementos h4 {
@@ -1287,6 +1536,7 @@ hr {
   font-size: 18px;
   font-weight: 400;
   font-style: italic;
+  color: rgb(96, 117, 91);
 }
 
 .contenedor_etiqueta_reservation-elementos img {
@@ -1309,17 +1559,19 @@ hr {
   font-size: 13px;
   padding: 0 0 0 5px;
   margin: 6px 0 0 0;
+  color: black;
 }
 
 .contenido_etiqueta_subelementos a {
   font-size: 13px;
-  padding: 0 0 0 5px;
-  color: #000;
+  padding: 0 20px 0 5px;
+  color: rgb(119, 146, 113);
+  margin: 0;
+  width: 70%;
 }
 
 .contenido_etiqueta_subelementos a:hover {
-  background-color: #6e8b5d;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .contenido_etiqueta_subelementos p {
@@ -1330,12 +1582,19 @@ hr {
 
 #subelemento-boton {
   text-align: center;
-  border: 1px solid rgb(105, 105, 105);
+  border: 1px solid white;
   padding: 5px 0 5px 0px;
   max-width: 60%;
   margin: 0 30px 0 30px;
   border-radius: 5px;
-  background: radial-gradient(circle, rgb(194, 228, 198) 15%, rgb(194, 228, 198) 41%, rgb(156, 227, 153) 96%);
+  background: rgb(119, 146, 113);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+#subelemento-boton:hover {
+  background-color: #6e8b5d;
+  color: white;
 }
 
 @media (min-width: 1200px) {
@@ -1346,6 +1605,7 @@ hr {
   }
   .contenedor_etiqueta_reservation-elementos {
     height: 200px;
+    margin: 15px 0 25px 60px;
   }
   .contenedor_etiqueta_reservation-elementos h4 {
     position: relative;
@@ -1391,8 +1651,15 @@ hr {
   font-style: italic;
   color: #829c72;
   font-family: "Raleway", sans-serif;
+  opacity: 0;
+  animation: aparecer 1s forwards;
 }
 
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
 .titulo_principal-contactus hr {
   margin: 0 60px 40px 60px;
   color: rgba(118, 143, 103, 0.7254901961);
@@ -1447,7 +1714,7 @@ hr {
   .contenedor-informacion-contactus {
     margin: 30px 20px 0 20px;
     height: 200px;
-    padding: 40px 0px 0 10px;
+    padding: 50px 0px 0 10px;
   }
   .contenedor-informacion-contactus p {
     font-size: 17px;
@@ -1466,7 +1733,8 @@ hr {
 @media (min-width: 1200px) {
   #mapa-contactus-desktop {
     display: inline-block;
-    margin: 0 0 60px 0;
+    margin: 30px 0 60px 0;
+    height: 430px;
   }
   #mapa-contactus-mobile {
     display: none;
@@ -1536,6 +1804,11 @@ hr {
   color: rgb(53, 68, 49);
 }
 
+@media (min-width: 768px) {
+  .contenedor-formulario-contactus input {
+    width: 90%;
+  }
+}
 @media (min-width: 1200px) {
   .section-formulario {
     width: 75%;

@@ -29,6 +29,20 @@ $font-raleway: 'Raleway', sans-serif;
     margin: 40px 30px 15px 30px;
     padding: 0 0 5px 0;
     font-family: $font-raleway;
+    opacity: 0;
+    animation: aparecer 1s forwards;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+    .titulo_principal {
+        margin: 150px 150px 15px 150px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -68,6 +82,18 @@ $font-raleway: 'Raleway', sans-serif;
 .contenido_secundario-gym img {
     width: 350px;
     height: 230px;
+}
+
+@media (min-width: 768px) {
+    .contenido_secundario-gym h3 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .contenido_secundario-gym img {
+        width: 400px;
+        height: 270px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -164,6 +190,59 @@ $font-raleway: 'Raleway', sans-serif;
     display: none;
 }
 
+@media (min-width: 768px) {
+    .contenido_secundario-restaurant h3 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .contenido_secundario-restaurant-primer-div {
+        height: 155px;
+        padding: 10px;
+    }
+
+    .contenido_secundario-restaurant-primer-div img {
+        width: 450px;
+        height: 250px;
+        bottom: 105px;
+        left: 17px;
+        transition: transform 0.3s ease;
+    }
+
+    .contenido_secundario-restaurant-primer-div img:hover {
+    transform: scale(1.1);
+    }   
+
+    .contenido_secundario-restaurant-primer-div a {
+        font-size: 15px;
+        padding: 35px 20px 3px 20px;
+        margin: 20px 0 20px 50px; 
+    }
+
+    #imagen_comida_desktop {
+        display: flex;
+    }
+
+    .contenido_secundario-restaurant-segundo-div {
+        height: 80px;
+        margin: 40px 0 125px 0;
+        padding: 10px;
+        justify-content: space-evenly;
+    }
+
+    .contenido_secundario-restaurant-segundo-div img {
+        width: 170px;
+        height: 150px;
+        top: 10px;
+        margin: 0 0 0 15px;
+        transition: transform 0.3s ease;
+    }
+
+    .contenido_secundario-restaurant-segundo-div img:hover {
+    transform: scale(1.2);
+    }
+}
+
 @media (min-width: 1200px) {
     .contenido_secundario-restaurant h3 {
         font-size: 25px;
@@ -200,10 +279,7 @@ $font-raleway: 'Raleway', sans-serif;
         width: 250px;
         height: 200px;
         margin: 0;
-    }
-
-    #imagen_comida_desktop {
-        display: flex;
+        top: 0
     }
 }
 
@@ -271,6 +347,18 @@ $font-raleway: 'Raleway', sans-serif;
 .contenido_secundario-events img {
     width: 350px;
     height: 230px;
+}
+
+@media (min-width: 768px) {
+    .contenido_secundario-events h3 {
+        font-size: 20px;
+        margin: 180px 20px 20px 20px
+    }
+
+    .contenido_secundario-events img {
+        width: 400px;
+        height: 270px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -344,6 +432,17 @@ $font-raleway: 'Raleway', sans-serif;
     height: 200px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.6s ease;
+    animation: agrandarAchicar 3s infinite alternate;
+}
+
+@keyframes agrandarAchicar {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
 
 #contenido-imagenes-imagengrande {
@@ -352,6 +451,28 @@ $font-raleway: 'Raleway', sans-serif;
     margin: 0 0 60px 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+    .contenido_secundario-ourpool h3 {
+        font-size: 20px;
+        margin: 80px 40px 0 40px;
+    }
+
+    .contenido_secundario-ourpool-contenedor-imagenes{
+        margin: 35px 50px 0 50px;
+    }
+
+    .contenido_secundario-ourpool img {
+        width: 370px;
+        height: 250px;
+    }
+
+    #contenido-imagenes-imagengrande {
+        width: 500px;
+        height: 300px;
+        margin: 15px 0 60px 0;
+    }
 }
 
 @media (min-width: 1200px) {

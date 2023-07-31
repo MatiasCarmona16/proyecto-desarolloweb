@@ -27,12 +27,22 @@ footer {
     margin: 0 0 5px 30px;
     width: 100px;
     font-weight: 500;
+
+    @media (min-width:768px) {
+      font-size: 17px ;
+      width: 120px;
+    }
   }
 
   ul {
     display: grid;
     font-size: $font-size-small;
     font-style: italic;
+
+    @media (min-width:768px) {
+      font-size: 14px ;
+      
+    }
   }
 
   &.footer_contactos {
@@ -51,6 +61,10 @@ footer {
     position: relative;
     left: 65px;
     top: 10px;
+
+  @media (min-width:688px) {
+    top: -20px
+  }
   }
 
   @media (min-width: 1200px) {

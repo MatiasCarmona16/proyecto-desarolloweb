@@ -21,16 +21,28 @@ $font-raleway: 'Raleway', sans-serif;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 45vh;
+  height: 55vh;
 }
 
 .sec-main__fotodeportada h2 {
   text-align: center;
-  padding-top: 9rem;
-  font-size: 30px;
+  padding-top: 12rem;
+  font-size: 35px;
   font-weight: 400;
   font-family: $font-raleway;
   color: #ffffff;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .sec-main__reservas {
@@ -47,6 +59,14 @@ $font-raleway: 'Raleway', sans-serif;
   padding: 6px 0 6px 0;
   border-radius: 4px;
   font-family: $font-raleway;
+  opacity: 0;
+  animation: aparecer 1s forwards;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
 }
 
 .sec-main__reservas input {
@@ -92,11 +112,28 @@ $font-raleway: 'Raleway', sans-serif;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: black;
   text-decoration: none;
-}
+  transition: transform 0.3s ease;
+  }
 
 .sec-main__reservas a:hover {
   color: rgba(110, 158, 98, 0.884);
   border: 1px solid rgba(65, 94, 58, 0.788);
+  transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .sec-main__fotodeportada h2 {
+    text-align: center;
+    padding-top: 17rem;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: $font-raleway;
+    color: #ffffff;
+  }
+
+  .sec-main__fotodeportada {
+    height: 75vh;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -124,6 +161,11 @@ $font-raleway: 'Raleway', sans-serif;
     padding: 10px 70px 10px 70px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 15px;
+    transition: transform 0.3s ease;
+  }
+
+  .sec-main__reservas input:hover {
+    transform: scale(1.1);
   }
 
   .reservas__botonubicacion {
@@ -192,12 +234,24 @@ $font-raleway: 'Raleway', sans-serif;
   box-shadow: $sombras-hr-index;
 }
 
+.seccionrooms img {
+  width: 350px;
+  height: 230px;
+}
+
 .seccionroomsdesktop {
   display: none;
 }
 
 .carousel-indicators .active {
   background-color: $color-active-indicator;
+}
+
+@media (min-width: 768px) {
+  .seccionrooms img {
+    width: 500px;
+    height: 330px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -235,8 +289,14 @@ $font-raleway: 'Raleway', sans-serif;
     width: 350px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+
+  .rooms-details img:hover {
+    transform: scale(1.2);
   }
 }
+
 
 @media (min-width: 1600px) {
   .rooms-details img {
@@ -275,9 +335,17 @@ $font-raleway: 'Raleway', sans-serif;
     margin: 0 0 90px 0;
 }
 
+.contenedorserv img {
+  transition: transform 0.3s ease;
+  }
+
+  .contenedorserv img:hover {
+    transform: scale(1.1);
+  }
+
+
 .imgserimg {
     display: grid;
-    width: 100%;
     max-width: 150px;
     height: 150px;
     object-fit: cover;
@@ -288,6 +356,22 @@ $font-raleway: 'Raleway', sans-serif;
 .posimg {
     display: grid;
     justify-items: end;
+}
+
+
+
+@media (min-width: 768px) {
+  .imgserimg {
+    max-width: 250px;
+    height: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  }
+
+  .contenedorserv {
+    row-gap: 40px;
+    column-gap: 90px;
+    margin: 0 0 90px 0;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -302,17 +386,30 @@ $font-raleway: 'Raleway', sans-serif;
     }
 
     .contenedorserv {
-        row-gap: 40px;
-        margin: 0 0 0 0;
+        row-gap: 60px;
         column-gap: 150px;
         background-color: rgba(110, 161, 97, 0.199);
         padding: 50px 0 70px 0;
+        margin: 0;
+    }
+
+    .contenedorserv img {
+      transition: transform 0.6s ease;
+      animation: agrandarAchicar 3s infinite alternate;
+    }
+    
+    @keyframes agrandarAchicar {
+      from {
+          transform: scale(1);
+      }
+      to {
+          transform: scale(1.1);
+      }
     }
 
     .imgserimg {
         max-width: 400px;
         height: 300px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
     }
 }
 
@@ -549,7 +646,6 @@ $font-raleway: 'Raleway', sans-serif;
 
     .video-aboutus {
         width: 50%;
-        
     }
 
     .video-aboutus iframe {

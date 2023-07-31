@@ -23,6 +23,14 @@ $font-raleway: 'Raleway', sans-serif;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
   padding: 0 0 5px 0;
   font-family: $font-raleway;
+  opacity: 0;
+  animation: aparecer 1s forwards;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
 }
 
 .input_selectorhabitacion {
@@ -54,20 +62,37 @@ $font-raleway: 'Raleway', sans-serif;
   margin-right: auto;
   margin-bottom: 80px;
   border-radius: 4px;
-  background: linear-gradient(180deg, $background-gradient-start 11%, $background-gradient-mid 46%, $background-gradient-mid 53%, $background-gradient-end 84%); /* Usamos las variables para los colores de fondo */
+  background: linear-gradient(180deg, $background-gradient-start 11%, $background-gradient-mid 46%, $background-gradient-mid 53%, $background-gradient-end 84%); 
 }
 
 .contenedor_imagenes-room img {
   width: 300px;
   height: 216px;
-  padding: 4px;
+  padding: 7px;
   border: 1px solid transparent;
   margin: 10px 0 0 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contenedor_imagenes-room img:hover {
+  transform: scale(1.1);
+  padding: 0;
 }
 
 .imagenes-room_detalles2 {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .titulo-principa-opciones-de-habitacion h2 {
+    margin: 150px 150px 15px 150px;
+    padding: 0 0 5px 0;
+  }
+
+  .contenedor_imagenes-room {
+    width: 500px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -96,5 +121,10 @@ $font-raleway: 'Raleway', sans-serif;
 
   .contenedor_imagenes-room {
     width: 1000px;
+  }
+
+  .contenedor_imagenes-room img {
+    padding: 7px;
+    margin: 5px 5px 5px 5px;
   }
 }
