@@ -1,4 +1,5 @@
-/* Colores */
+/* Variables */
+
 $color-fotodeportada-bg: rgba(163, 233, 145, 0.527);
 $color-boton-detalles-bg: #ffffff;
 $color-boton-detalles-hover: #658155e1;
@@ -6,15 +7,9 @@ $color-active-indicator: #d5ffbc;
 $color-hr-index: rgba(97, 136, 87, 0.466);
 $sombras-hr-index: 0 4px 8px rgba(0, 0, 0, 0.5);
 
-$primaryColor: rgba(120, 173, 126, 0.644);
-$secondaryColor: rgb(156, 227, 153);
-$gradientStart: rgba(255, 255, 255, 1);
-$gradientMiddle: rgba(221, 221, 221, 1);
-$gradientEnd: rgba(204, 231, 189, 1);
-
 $font-raleway: 'Raleway', sans-serif;
 
-/*-------------------INDEX PORTADA Y RESERVAS MAIN MOBILE Y DESKTOP----------------------*/
+/*-------------------INDEX: PORTADA Y RESERVAS / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .sec-main__fotodeportada {
   background-image: url(../img/exterior.jpg);
@@ -22,22 +17,22 @@ $font-raleway: 'Raleway', sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
   height: 55vh;
-}
 
-.sec-main__fotodeportada h1 {
-  position: absolute;
-  color: transparent;
-  background-color: transparent;
-}
+  & h1 {
+    position: absolute;
+    color: transparent;
+    background-color: transparent;
+  }
 
-.sec-main__fotodeportada h2 {
-  text-align: center;
-  padding-top: 12rem;
-  font-size: 35px;
-  font-weight: 400;
-  font-family: $font-raleway;
-  color: #ffffff;
-  animation: fadeInUp 1s ease-in-out;
+  & h2 {
+    text-align: center;
+    padding-top: 12rem;
+    font-size: 35px;
+    font-weight: 400;
+    font-family: $font-raleway;
+    color: #ffffff;
+    animation: fadeInUp 1s ease-in-out;
+  }
 }
 
 @keyframes fadeInUp {
@@ -67,26 +62,26 @@ $font-raleway: 'Raleway', sans-serif;
   font-family: $font-raleway;
   opacity: 0;
   animation: aparecer 3s forwards;
+
+  & input {
+    margin: 0 10px 0 10px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    padding: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: black;
+
+    &:hover {
+      border: 1px solid rgba(65, 94, 58, 0.788);
+    }
+  }
 }
 
 @keyframes aparecer {
   to {
     opacity: 1;
   }
-}
-
-.sec-main__reservas input {
-  margin: 0 10px 0 10px;
-  border-radius: 3px;
-  border: 1px solid transparent;
-  padding: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  color: black;
-}
-
-.sec-main__reservas input:hover {
-  border: 1px solid rgba(65, 94, 58, 0.788);
 }
 
 .reservas__botonubicacion {
@@ -223,7 +218,7 @@ $font-raleway: 'Raleway', sans-serif;
   }
 }
 
-/*-------------------------ROOM MAIN INDEX MOBILE Y DESKTOP----------------------------*/
+/*-------------------INDEX: Rooms / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .titulo-secundario-room h3 {
   display: block;
@@ -311,17 +306,7 @@ $font-raleway: 'Raleway', sans-serif;
   }
 }
 
-/*------------------SERVICES MAIN MOBILE Y DESKTOP-------------------*/
-
-.titulo-secunadario-service h3 {
-    display: block;
-    text-align: center;
-    margin: 80px 0 0 0;
-    font-style: italic;
-    font-weight: 300;
-    font-family: $font-raleway;
-    padding: 20px 0 0 0;
-}
+/*-------------------INDEX: Services / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .titulo-secunadario-service {
     display: block;
@@ -329,6 +314,16 @@ $font-raleway: 'Raleway', sans-serif;
     margin: 9px 0 0px 0;
     color: black;
     background-color: rgba(110, 161, 97, 0.199);
+
+    & h3 {
+      display: block;
+      text-align: center;
+      margin: 80px 0 0 0;
+      font-style: italic;
+      font-weight: 300;
+      font-family: $font-raleway;
+      padding: 20px 0 0 0;
+  }
 }
 
 .contenedorserv {
@@ -339,16 +334,15 @@ $font-raleway: 'Raleway', sans-serif;
     background-color: rgba(110, 161, 97, 0.199);
     padding: 30px 0 50px 0;
     margin: 0 0 90px 0;
+
+    & img {
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+      }
 }
-
-.contenedorserv img {
-  transition: transform 0.3s ease;
-  }
-
-  .contenedorserv img:hover {
-    transform: scale(1.1);
-  }
-
 
 .imgserimg {
     display: grid;
@@ -419,7 +413,7 @@ $font-raleway: 'Raleway', sans-serif;
     }
 }
 
-/*---------------UBICACION MAIN MOBILE Y DESKTOP----------------------*/
+/*-------------------INDEX: Ubicacion / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .titulo-secundario-ubicacion h3 {
     display: block;
@@ -470,7 +464,7 @@ $font-raleway: 'Raleway', sans-serif;
         bottom: 8px;
     }
 }
-/* ----------------REVIEWS MAIN MOBILE Y DESKTOP----------------------*/
+/*-------------------INDEX: Reviews / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 #hrrev {
     display: block;
@@ -482,20 +476,20 @@ $font-raleway: 'Raleway', sans-serif;
 
 .reviews {
   background-color: rgba(110, 161, 97, 0.199);
-}
 
-.reviews h3 {
+  & h3 {
     display: none;
     font-family: $font-raleway;
-}
+  } 
 
-.reviews h4 {
+  & h4 {
   display: block;
   text-align: center;
   position: relative;
   bottom: 26px;
   font-size: 40px;
   color:#79a062e0
+  }
 }
 
 .flexreview {
@@ -514,21 +508,21 @@ $font-raleway: 'Raleway', sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     height: 340px;
     background-color: #ffffffc0;
-}
 
-.rev h5 {
-    display: block;
-    text-align: center;
-    font-size: 18px;
-    color: rgb(37, 37, 37);
-    font-style: italic;
-    padding: 20px 0 0 0;
-}
+    & h5 {
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      color: rgb(37, 37, 37);
+      font-style: italic;
+      padding: 20px 0 0 0;
+  }
 
-.rev p {
+    & p {
     font-size: 13px;
     padding: 8px 10px 0 10px;
     text-align: center;
+  }
 }
 
 #pstar {
@@ -588,7 +582,7 @@ $font-raleway: 'Raleway', sans-serif;
     }
 }
 
-/*-------------------ABOUT US MAIN MOBILE Y DESKTOP--------------------*/
+/*-------------------INDEX: About us / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .titulo-secundario-aboutus h3 {
     display: block;
@@ -612,10 +606,10 @@ $font-raleway: 'Raleway', sans-serif;
     padding: 25px ;
     margin: 50px 0 0 0 ;
     height: 150px;
-}
 
-.aboutusconteiner p{
-    display: none
+    & p{
+      display: none
+  }
 }
 
 .video-aboutus iframe {

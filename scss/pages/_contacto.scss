@@ -1,37 +1,34 @@
 
-/* Variables para fuentes*/
+/* Variables */
 $font-size-small: 14px;
 $font-size-medium: 17px;
-$font-size-large: 25px;
 
-/* Variables para colores*/
+
 $color-green: #829c72;
 $color-info-text: rgb(53, 68, 49);
 $color-map-label: #829c72;
 $color-submit-hover: #98c081;
 
-/* Variables para colores de fondo*/
+
 $color-bg-gradient-from: rgba(255, 255, 255, 1);
 $color-bg-gradient-to: rgba(255, 255, 255, 0.95);
 $color-bg-info-from: rgba(199, 232, 179, 0.91);
 $color-bg-info-to: rgba(255, 255, 255, 1);
 $color-bg-form-from: rgba(199, 232, 179, 0.91);
 $color-bg-form-to: rgba(255, 255, 255, 1);
-$color-submit-bg-from: rgb(194, 228, 198);
-$color-submit-bg-to: rgba(156, 227, 153, 1);
 $color-submit-border: white;
 
 $font-raleway: 'Raleway', sans-serif;
-/*-------------------VERSION MOBILE Y DESKTOP "PAGE CONTACT US"----------------------*/
 
-/*-----------------TITULO PRINCIPAL DESKTOP Y MOBILE CONTACT US------------------*/
+
+/*-------------------CONTACT US: Titulo principal / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .titulo_principal-contactus {
     text-align: center;
     margin: 150px 0 0 0;
 
     & h2 {
-        font-size: $font-size-large;
+        font-size: 25px;
         font-style: italic;
         color: $color-green;
         font-family: $font-raleway;
@@ -65,7 +62,7 @@ $font-raleway: 'Raleway', sans-serif;
     }
 }
 
-/*----------------SECCION DE INFORMACION MOBILE Y DESKTOP CONTACT US---------------*/
+/*-------------------CONTACT US: Informacion / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .section-informacion {
     width: 100%;
@@ -113,7 +110,7 @@ $font-raleway: 'Raleway', sans-serif;
     }
 }
 
-/*----------------SECCION DE MAPA MOBILE Y DESKTOP CONTACT US---------------*/
+/*-------------------CONTACT US: Ubicacion mapa / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .contenedor_mapa-contactus hr {
     margin: 30px 50px 0 50px;
@@ -136,7 +133,7 @@ $font-raleway: 'Raleway', sans-serif;
     }
 }
 
-/*----------------SECCION DE FORMULARIO MOBILE Y DESKTOP CONTACT US---------------*/
+/*-------------------CONTACT US: Formulario / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .section-formulario {
     height: 300px;

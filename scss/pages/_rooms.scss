@@ -1,15 +1,13 @@
-/* Variables page room*/
-$font-size-title: 25px;
-$font-size-selector: 16px;
+/* Variables */
+
 $color-primary: #829c72;
-$color-secondary: #000;
 $background-gradient-start: rgba(255, 255, 255, 1);
 $background-gradient-mid: rgba(208, 226, 201, 1);
 $background-gradient-end: rgba(255, 255, 255, 1);
 
 $font-raleway: 'Raleway', sans-serif;
 
-/*-------------------VERSION MOBILE Y DESKTOP "PAGE ROOM" MAIN--------------------*/
+/*-------------------ROOMS / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .titulo-principa-opciones-de-habitacion h2 {
   display: block;
@@ -17,7 +15,7 @@ $font-raleway: 'Raleway', sans-serif;
   font-style: italic;
   margin: 150px 30px 15px 30px;
   color: $color-primary; 
-  font-size: $font-size-title; 
+  font-size: 25px; 
   border-bottom: 2px solid #829c72;
   border-radius: 5px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
@@ -43,7 +41,7 @@ $font-raleway: 'Raleway', sans-serif;
   padding: 7px 30px 7px 30px;
   text-align: center; 
   border-radius: 2px;
-  font-size: $font-size-selector;
+  font-size: 16px;
   font-family: $font-raleway;
   background-color: white;
   color: black;

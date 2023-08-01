@@ -194,8 +194,8 @@ hr {
   border: 1px solid;
 }
 
-/* Colores */
-/*-------------------INDEX PORTADA Y RESERVAS MAIN MOBILE Y DESKTOP----------------------*/
+/* Variables */
+/*-------------------INDEX: PORTADA Y RESERVAS / version: TABLET MOBILE Y DESKTOP----------------------*/
 .sec-main__fotodeportada {
   background-image: url(../img/exterior.jpg);
   background-position: center;
@@ -203,13 +203,11 @@ hr {
   background-size: cover;
   height: 55vh;
 }
-
 .sec-main__fotodeportada h1 {
   position: absolute;
   color: transparent;
   background-color: transparent;
 }
-
 .sec-main__fotodeportada h2 {
   text-align: center;
   padding-top: 12rem;
@@ -247,12 +245,6 @@ hr {
   opacity: 0;
   animation: aparecer 3s forwards;
 }
-
-@keyframes aparecer {
-  to {
-    opacity: 1;
-  }
-}
 .sec-main__reservas input {
   margin: 0 10px 0 10px;
   border-radius: 3px;
@@ -262,11 +254,15 @@ hr {
   background-color: white;
   color: black;
 }
-
 .sec-main__reservas input:hover {
   border: 1px solid rgba(65, 94, 58, 0.788);
 }
 
+@keyframes aparecer {
+  to {
+    opacity: 1;
+  }
+}
 .reservas__botonubicacion {
   display: flex;
   justify-content: center;
@@ -385,7 +381,7 @@ hr {
     padding: 10px 100px 10px 100px;
   }
 }
-/*-------------------------ROOM MAIN INDEX MOBILE Y DESKTOP----------------------------*/
+/*-------------------INDEX: Rooms / version: TABLET MOBILE Y DESKTOP----------------------*/
 .titulo-secundario-room h3 {
   display: block;
   margin: 20px 0 0 25px;
@@ -462,7 +458,14 @@ hr {
     width: 450px;
   }
 }
-/*------------------SERVICES MAIN MOBILE Y DESKTOP-------------------*/
+/*-------------------INDEX: Services / version: TABLET MOBILE Y DESKTOP----------------------*/
+.titulo-secunadario-service {
+  display: block;
+  text-align: center;
+  margin: 9px 0 0px 0;
+  color: black;
+  background-color: rgba(110, 161, 97, 0.199);
+}
 .titulo-secunadario-service h3 {
   display: block;
   text-align: center;
@@ -471,14 +474,6 @@ hr {
   font-weight: 300;
   font-family: "Raleway", sans-serif;
   padding: 20px 0 0 0;
-}
-
-.titulo-secunadario-service {
-  display: block;
-  text-align: center;
-  margin: 9px 0 0px 0;
-  color: black;
-  background-color: rgba(110, 161, 97, 0.199);
 }
 
 .contenedorserv {
@@ -490,11 +485,9 @@ hr {
   padding: 30px 0 50px 0;
   margin: 0 0 90px 0;
 }
-
 .contenedorserv img {
   transition: transform 0.3s ease;
 }
-
 .contenedorserv img:hover {
   transform: scale(1.1);
 }
@@ -558,7 +551,7 @@ hr {
     height: 300px;
   }
 }
-/*---------------UBICACION MAIN MOBILE Y DESKTOP----------------------*/
+/*-------------------INDEX: Ubicacion / version: TABLET MOBILE Y DESKTOP----------------------*/
 .titulo-secundario-ubicacion h3 {
   display: block;
   border: 1px solid transparent;
@@ -605,7 +598,7 @@ hr {
     bottom: 8px;
   }
 }
-/* ----------------REVIEWS MAIN MOBILE Y DESKTOP----------------------*/
+/*-------------------INDEX: Reviews / version: TABLET MOBILE Y DESKTOP----------------------*/
 #hrrev {
   display: block;
   margin: 90px 0 0 0;
@@ -617,12 +610,10 @@ hr {
 .reviews {
   background-color: rgba(110, 161, 97, 0.199);
 }
-
 .reviews h3 {
   display: none;
   font-family: "Raleway", sans-serif;
 }
-
 .reviews h4 {
   display: block;
   text-align: center;
@@ -649,7 +640,6 @@ hr {
   height: 340px;
   background-color: rgba(255, 255, 255, 0.7529411765);
 }
-
 .rev h5 {
   display: block;
   text-align: center;
@@ -658,7 +648,6 @@ hr {
   font-style: italic;
   padding: 20px 0 0 0;
 }
-
 .rev p {
   font-size: 13px;
   padding: 8px 10px 0 10px;
@@ -715,7 +704,7 @@ hr {
     text-align: center;
   }
 }
-/*-------------------ABOUT US MAIN MOBILE Y DESKTOP--------------------*/
+/*-------------------INDEX: About us / version: TABLET MOBILE Y DESKTOP----------------------*/
 .titulo-secundario-aboutus h3 {
   display: block;
   margin: 50px 0 0 25px;
@@ -739,7 +728,6 @@ hr {
   margin: 50px 0 0 0;
   height: 150px;
 }
-
 .aboutusconteiner p {
   display: none;
 }
@@ -812,8 +800,8 @@ hr {
     margin: 100px 0 0 100px;
   }
 }
-/* Variables page room*/
-/*-------------------VERSION MOBILE Y DESKTOP "PAGE ROOM" MAIN--------------------*/
+/* Variables */
+/*-------------------ROOMS / version: TABLET MOBILE Y DESKTOP----------------------*/
 .titulo-principa-opciones-de-habitacion h2 {
   display: block;
   text-align: center;
@@ -922,8 +910,7 @@ hr {
   }
 }
 /* Variables */
-/*-------------------VERSION MOBILE Y DESKTOP "PAGE SERVICES"----------------------*/
-/*-------------------VERSION MOBILE Y DESKTOP TITULO PRINCIPAL PAGE SERVICES------------------*/
+/*-------------------SERVICES: Titulo principal / version: TABLET MOBILE Y DESKTOP----------------------*/
 .titulo_principal {
   text-align: center;
   margin: 150px 0 0 0;
@@ -963,7 +950,7 @@ hr {
     margin: 0 700px 60px 700px;
   }
 }
-/*-------------------CONTENIDO SECUNDARIO PAGE SERVICE: GYM VERSION MOBILE Y DESKTOP------------------*/
+/*-------------------SERVICES: Contenido Gym / version: TABLET MOBILE Y DESKTOP----------------------*/
 .contenido_secundario-gym {
   margin: 50px 0 0 0;
   background: rgba(255, 255, 255, 0.7805497199);
@@ -1012,7 +999,7 @@ hr {
     height: 450px;
   }
 }
-/*------------CONTENIDO SECUNDARIO PAGE SERVICE: RESTAURANT VERSION MOBILE Y DESKTOP-------------*/
+/*-------------------SERVICES: Contenido Restaurant / version: TABLET MOBILE Y DESKTOP----------------------*/
 .contenido_secundario-restaurant h3 {
   text-align: center;
   background: rgba(110, 161, 97, 0.473);
@@ -1183,7 +1170,7 @@ hr {
     margin: 20px 0 20px 500px;
   }
 }
-/*-----------------CONTENIDO SECUNDARIO PAGE SERVICE: EVENTS VERSION MOBILE Y DESKTOP---------------*/
+/*-------------------SERVICES: Contenido Events / version: TABLET MOBILE Y DESKTOP----------------------*/
 .contenido_secundario-events {
   background: rgba(255, 255, 255, 0.7805497199);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.7805497199) 6%, rgba(199, 232, 179, 0.6825105042) 11%, rgba(199, 232, 179, 0.5256477591) 93%, rgba(255, 255, 255, 0.7861519608) 97%);
@@ -1264,7 +1251,7 @@ hr {
     height: 450px;
   }
 }
-/*------------CONTENIDO SECUNDARIO PAGE SERVICE: POOL VERSION MOBILE Y DESKTOP---------------*/
+/*-------------------SERVICES: Contenido Our Pool / version: TABLET MOBILE Y DESKTOP----------------------*/
 .contenido_secundario-ourpool h3 {
   text-align: center;
   margin: 50px 40px 0 40px;
@@ -1350,7 +1337,7 @@ hr {
     margin: 40px 40px 40px 0;
   }
 }
-/*-------------CONTENIDO SECUNDARIO PAGE SERVICE: FOTO FINAL VERSION MOBILE Y DESKTOP----------------*/
+/*-------------------SERVICES: Contenido Imagen Logo Hotel Holiday Inn / version: TABLET MOBILE Y DESKTOP----------------------*/
 .imagen_final-logo {
   display: block;
   text-align: center;
@@ -1369,9 +1356,8 @@ hr {
     height: 150px;
   }
 }
-/* Variables page Reservations */
-/*-------------------VERSION MOBILE Y DESKTOP"PAGE RESERVATIONS"----------------------*/
-/*-------------------VERSION MOBILE Y DESKTOP TITULO PRINCIPAL Y OPCIONES DE BUSQUEDA PAGE RESERVATIONS------------------*/
+/* Variables */
+/*-------------------RESERVATIONS: Titulo principal y elementos de busqueda / version: TABLET MOBILE Y DESKTOP----------------------*/
 .titulo_principal-reservations {
   text-align: center;
   margin: 150px 0 0 0;
@@ -1484,7 +1470,7 @@ hr {
     font-size: 18px;
   }
 }
-/*-------------------VERSION MOBILE Y DESKTOP ETIQUETAS DE OPCIONES DE BUSQUEDA PAGE RESERVATIONS------------------*/
+/*-------------------RESERVATIONS: Etiquetas de resultaod de busqueda con elementos / version: TABLET MOBILE Y DESKTOP----------------------*/
 .contenedor_etiqueta_reservation {
   background: linear-gradient(180deg, rgb(255, 255, 255) 3%, rgba(204, 234, 186, 0.7329306723) 8%, rgba(199, 232, 179, 0.5172443978) 72%, rgb(255, 255, 255) 86%);
   padding: 10px 0 10px 0;
@@ -1535,7 +1521,7 @@ hr {
 }
 
 .contenido_etiqueta_subelementos {
-  border-left: 1px solid #000;
+  border-left: 1px solid black;
   margin: 32px 0 25px 10px;
   display: flex;
   flex-direction: column;
@@ -1633,11 +1619,8 @@ hr {
     width: 85%;
   }
 }
-/* Variables para fuentes*/
-/* Variables para colores*/
-/* Variables para colores de fondo*/
-/*-------------------VERSION MOBILE Y DESKTOP "PAGE CONTACT US"----------------------*/
-/*-----------------TITULO PRINCIPAL DESKTOP Y MOBILE CONTACT US------------------*/
+/* Variables */
+/*-------------------CONTACT US: Titulo principal / version: TABLET MOBILE Y DESKTOP----------------------*/
 .titulo_principal-contactus {
   text-align: center;
   margin: 150px 0 0 0;
@@ -1671,7 +1654,7 @@ hr {
     display: flex;
   }
 }
-/*----------------SECCION DE INFORMACION MOBILE Y DESKTOP CONTACT US---------------*/
+/*-------------------CONTACT US: Informacion / version: TABLET MOBILE Y DESKTOP----------------------*/
 .section-informacion {
   width: 100%;
   height: 110px;
@@ -1714,7 +1697,7 @@ hr {
     font-size: 17px;
   }
 }
-/*----------------SECCION DE MAPA MOBILE Y DESKTOP CONTACT US---------------*/
+/*-------------------CONTACT US: Ubicacion mapa / version: TABLET MOBILE Y DESKTOP----------------------*/
 .contenedor_mapa-contactus hr {
   margin: 30px 50px 0 50px;
   color: #829c72;
@@ -1734,7 +1717,7 @@ hr {
     display: none;
   }
 }
-/*----------------SECCION DE FORMULARIO MOBILE Y DESKTOP CONTACT US---------------*/
+/*-------------------CONTACT US: Formulario / version: TABLET MOBILE Y DESKTOP----------------------*/
 .section-formulario {
   height: 300px;
   background: linear-gradient(180deg, rgb(255, 255, 255) 6%, rgba(199, 232, 179, 0.91) 17%, rgb(255, 255, 255) 80%, rgba(255, 255, 255, 0.95) 95%);

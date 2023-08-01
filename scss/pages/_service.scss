@@ -1,7 +1,5 @@
 /* Variables */
-$primary-font: 'Arial', sans-serif;
-$secondary-font: 'Helvetica', sans-serif;
-$font-size-title: 25px;
+
 $primary-color: #829c72;
 $secondary-color: #768f67b9;
 $background-color-1: rgba(255,255,255,0.7805497198879552);
@@ -10,16 +8,15 @@ $background-color-3: rgba(199,232,179,0.5256477591036415);
 $background-color-4: rgba(255,255,255,0.7861519607843137);
 
 $font-raleway: 'Raleway', sans-serif;
-/*-------------------VERSION MOBILE Y DESKTOP "PAGE SERVICES"----------------------*/
 
-/*-------------------VERSION MOBILE Y DESKTOP TITULO PRINCIPAL PAGE SERVICES------------------*/
 
+/*-------------------SERVICES: Titulo principal / version: TABLET MOBILE Y DESKTOP----------------------*/
 .titulo_principal {
     text-align: center;
     margin: 150px 0 0 0;
     
     & h2 {
-        font-size: $font-size-title;
+        font-size: 25px;
         font-style: italic;
         color: $primary-color;
         border-bottom: 2px solid #829c72;
@@ -59,7 +56,7 @@ $font-raleway: 'Raleway', sans-serif;
     }
 }
 
-/*-------------------CONTENIDO SECUNDARIO PAGE SERVICE: GYM VERSION MOBILE Y DESKTOP------------------*/
+/*-------------------SERVICES: Contenido Gym / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .contenido_secundario-gym {
     margin: 50px 0 0 0;
@@ -116,7 +113,7 @@ $font-raleway: 'Raleway', sans-serif;
     }
 }
 
-/*------------CONTENIDO SECUNDARIO PAGE SERVICE: RESTAURANT VERSION MOBILE Y DESKTOP-------------*/
+/*-------------------SERVICES: Contenido Restaurant / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .contenido_secundario-restaurant h3 {
     text-align: center;
@@ -310,7 +307,7 @@ $font-raleway: 'Raleway', sans-serif;
     }
 }
 
-/*-----------------CONTENIDO SECUNDARIO PAGE SERVICE: EVENTS VERSION MOBILE Y DESKTOP---------------*/
+/*-------------------SERVICES: Contenido Events / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .contenido_secundario-events {
     background: $background-color-1;
@@ -402,7 +399,7 @@ $font-raleway: 'Raleway', sans-serif;
     }
 }
 
-/*------------CONTENIDO SECUNDARIO PAGE SERVICE: POOL VERSION MOBILE Y DESKTOP---------------*/
+/*-------------------SERVICES: Contenido Our Pool / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .contenido_secundario-ourpool h3 {
     text-align: center;
@@ -497,7 +494,7 @@ $font-raleway: 'Raleway', sans-serif;
     }
 }
 
-/*-------------CONTENIDO SECUNDARIO PAGE SERVICE: FOTO FINAL VERSION MOBILE Y DESKTOP----------------*/
+/*-------------------SERVICES: Contenido Imagen Logo Hotel Holiday Inn / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .imagen_final-logo {
     display: block;
