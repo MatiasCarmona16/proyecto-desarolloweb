@@ -1,13 +1,5 @@
 // Variables
 $font-size-small: 12px;
-$font-size-medium: 16px;
-$font-size-large: 18px;
-$padding-small: 8px;
-$padding-large: 20px;
-$image-width-small: 30%;
-$image-width-large: 25%;
-
-$font-raleway: 'Raleway', sans-serif;
 
 // Styles
 footer {
@@ -15,7 +7,7 @@ footer {
   margin: 0px 0 10px 0;
   background: rgba(110, 161, 97, 0.473);
   width: 100%;
-  padding: $padding-small;
+  padding: 8px;
   grid-template-columns: 1fr 1fr;
   justify-items: start;
   font-family: $font-raleway;
@@ -45,6 +37,10 @@ footer {
     }
   }
 
+  li:hover {
+    color: rgba(255, 255, 255, 0.705);
+  }
+
   &.footer_contactos {
     display: grid;
     margin: 20px 0 0 0;
@@ -57,7 +53,7 @@ footer {
   }
 
   img {
-    width: $image-width-small;
+    width: 30%;
     position: relative;
     left: 65px;
     top: 10px;
@@ -71,12 +67,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: start;
-    padding: $padding-large 20px $padding-large 80px;
+    padding: 20px 20px 20px 80px;
     font-weight: 300;
 
     h4 {
       display: flex;
-      font-size: $font-size-large;
+      font-size: 18px;
       width: 95%;
       font-weight: bolder;
       font-style: italic;
@@ -84,7 +80,7 @@ footer {
 
     ul {
       display: inline-block;
-      font-size: $font-size-medium;
+      font-size: 16px;
     }
 
     &.footer_contactos {
@@ -98,7 +94,7 @@ footer {
     }
 
     img {
-      width: $image-width-large;
+      width: 25%;
       position: relative;
       left: 150px;
       top: 10px;

@@ -84,6 +84,9 @@ footer ul {
     font-size: 14px;
   }
 }
+footer li:hover {
+  color: rgba(255, 255, 255, 0.705);
+}
 footer.footer_contactos {
   display: grid;
   margin: 20px 0 0 0;
@@ -495,7 +498,7 @@ hr {
   transform: scale(1.1);
 }
 
-.imgserimg {
+.contenedorserv-imagenes-detalles {
   display: grid;
   max-width: 150px;
   height: 150px;
@@ -504,13 +507,13 @@ hr {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.posimg {
+.contenedorserv-posicionamiento-imagenes {
   display: grid;
   justify-items: end;
 }
 
 @media (min-width: 768px) {
-  .imgserimg {
+  .contenedorserv-imagenes-detalles {
     max-width: 250px;
     height: 220px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
@@ -548,7 +551,7 @@ hr {
       transform: scale(1.1);
     }
   }
-  .imgserimg {
+  .contenedorserv-imagenes-detalles {
     max-width: 400px;
     height: 300px;
   }
@@ -656,7 +659,7 @@ hr {
   text-align: center;
 }
 
-#pstar {
+#rev-posicion-estrellas {
   text-align: center;
   font-size: 30px;
   color: #a7ca93;
@@ -694,7 +697,7 @@ hr {
     font-style: italic;
     padding: 20px 0 0 0;
   }
-  #pstar {
+  #rev-posicion-estrellas {
     text-align: center;
     font-size: 50px;
     padding: 0;
@@ -861,6 +864,7 @@ hr {
   border: 1px solid transparent;
   margin: 10px 0 0 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
   transition: transform 0.3s ease;
 }
 .contenedor_imagenes-room img:hover {
