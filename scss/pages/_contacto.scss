@@ -1,26 +1,4 @@
 
-/* Variables */
-$font-size-small: 14px;
-$font-size-medium: 17px;
-
-
-$color-green: #829c72;
-$color-info-text: rgb(53, 68, 49);
-$color-map-label: #829c72;
-$color-submit-hover: #98c081;
-
-
-$color-bg-gradient-from: rgba(255, 255, 255, 1);
-$color-bg-gradient-to: rgba(255, 255, 255, 0.95);
-$color-bg-info-from: rgba(199, 232, 179, 0.91);
-$color-bg-info-to: rgba(255, 255, 255, 1);
-$color-bg-form-from: rgba(199, 232, 179, 0.91);
-$color-bg-form-to: rgba(255, 255, 255, 1);
-$color-submit-border: white;
-
-$font-raleway: 'Raleway', sans-serif;
-
-
 /*-------------------CONTACT US: Titulo principal / version: TABLET MOBILE Y DESKTOP----------------------*/
 
 .titulo_principal-contactus {
@@ -30,7 +8,7 @@ $font-raleway: 'Raleway', sans-serif;
     & h2 {
         font-size: 25px;
         font-style: italic;
-        color: $color-green;
+        color: $color-titulos;
         font-family: $font-raleway;
         opacity: 0;
         animation: aparecer 1s forwards;
@@ -85,10 +63,10 @@ $font-raleway: 'Raleway', sans-serif;
     font-family: $font-raleway;
 
     & p {
-        font-size: $font-size-small;
+        font-size: 14px;
         margin-bottom: 8px;
         font-weight: 300;
-        color: white;
+        color: $color-white;
     }
 }
 
@@ -106,7 +84,7 @@ $font-raleway: 'Raleway', sans-serif;
     }
 
     .contenedor-informacion-contactus p {
-        font-size: $font-size-medium;
+        font-size: 17px;
     }
 }
 
@@ -114,7 +92,7 @@ $font-raleway: 'Raleway', sans-serif;
 
 .contenedor_mapa-contactus hr {
     margin: 30px 50px 0 50px;
-    color: $color-map-label;
+    color: $color-titulos;
 }
 
 #mapa-contactus-desktop {
@@ -158,15 +136,15 @@ $font-raleway: 'Raleway', sans-serif;
         font-weight: 300;
         font-style: italic;
         padding: 20px 0 0 0;
-        color: white;
+        color: $color-white;
     }
 
     & label {
         width: 100%;
         padding: 17px 0px 0 10px;
         font-weight: 300;
-        font-size: $font-size-small;
-        color: white;
+        font-size: 14px;
+        color: $color-white;
     }
 
     & input {
@@ -174,7 +152,7 @@ $font-raleway: 'Raleway', sans-serif;
         margin: 0 0 0 10px;
         border: transparent;
         padding: 5px 0 5px 0;
-        font-size: $font-size-small;
+        font-size: 14px;
         font-style: italic;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
@@ -188,8 +166,8 @@ $font-raleway: 'Raleway', sans-serif;
     margin: 15px 0 0 10px;
     border-radius: 4px;
     background: rgb(119, 146, 113);
-    border: 1px solid $color-submit-border;
-    color: white;
+    border: 1px solid $color-white;
+    color: $color-white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
     &:hover {

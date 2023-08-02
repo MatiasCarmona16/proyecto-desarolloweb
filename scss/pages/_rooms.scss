@@ -1,11 +1,3 @@
-/* Variables */
-
-$color-primary: #829c72;
-$background-gradient-start: rgba(255, 255, 255, 1);
-$background-gradient-mid: rgba(208, 226, 201, 1);
-$background-gradient-end: rgba(255, 255, 255, 1);
-
-$font-raleway: 'Raleway', sans-serif;
 
 /*-------------------ROOMS / version: TABLET MOBILE Y DESKTOP----------------------*/
 
@@ -14,9 +6,9 @@ $font-raleway: 'Raleway', sans-serif;
   text-align: center;
   font-style: italic;
   margin: 150px 30px 15px 30px;
-  color: $color-primary; 
+  color: $color-titulos; 
   font-size: 25px; 
-  border-bottom: 2px solid #829c72;
+  border-bottom: 2px solid $color-titulos;
   border-radius: 5px;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
   padding: 0 0 5px 0;
@@ -43,9 +35,9 @@ $font-raleway: 'Raleway', sans-serif;
   border-radius: 2px;
   font-size: 16px;
   font-family: $font-raleway;
-  background-color: white;
-  color: black;
-  border: 1px solid black;
+  background-color: $color-white;
+  color: $color-black;
+  border: 1px solid $color-black;
 }
 
 .input_opciones-ubicacion {

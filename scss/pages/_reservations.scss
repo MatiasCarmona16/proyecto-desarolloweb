@@ -1,13 +1,3 @@
-/* Variables */
-
-$font-size-small: 13px;
-$font-size-medium: 18px;
-$font-size-large: 24px;
-$color-primary: #829c72;
-$color-secondary: #6e8b5d;
-
-$font-raleway: 'Raleway', sans-serif;
-
 
 /*-------------------RESERVATIONS: Titulo principal y elementos de busqueda / version: TABLET MOBILE Y DESKTOP----------------------*/
 
@@ -18,7 +8,7 @@ $font-raleway: 'Raleway', sans-serif;
   & h2 {
     font-size: 25px;
     font-style: italic;
-    color: $color-primary;
+    color: $color-titulos;
     font-family: $font-raleway;
     opacity: 0;
     animation: aparecer 1s forwards;
@@ -47,7 +37,7 @@ $font-raleway: 'Raleway', sans-serif;
     text-align: center;
     width: 240px;
     margin: 5px 0 0 0;
-    background-color: white;
+    background-color: $color-white;
     color: rgb(0, 0, 0);
     border: 1px solid rgb(168, 168, 168);
     border-radius: 2px;
@@ -62,7 +52,7 @@ $font-raleway: 'Raleway', sans-serif;
     padding: 7px 50px 7px 50px;
     text-align: center;
     width: 240px;
-    background-color: white;
+    background-color: $color-white;
     color: black;
     border: 1px solid rgb(168, 168, 168);
     border-radius: 2px;
@@ -77,18 +67,30 @@ $font-raleway: 'Raleway', sans-serif;
     position: relative;
     bottom: 13px;
     padding: 6px 50px 6px 50px;
-    font-size: $font-size-medium;
+    font-size: 18px;
     background: rgb(119, 146, 113);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid $color-white;
     font-style: italic;
     border-radius: 5px;
-    color: white;
+    color: $color-white;
 
     &:hover {
       background-color: $color-secondary;
-      color: white;
+      color: $color-white;
     }
+  }
+}
+
+@media (min-width:486px) {
+  .inputs_reservations {
+    margin: 35px 88px 0 88px;
+  }
+}
+
+@media (min-width:768px) {
+  .inputs_reservations {
+    margin: 35px 0 0 0;
   }
 }
 
@@ -111,7 +113,7 @@ $font-raleway: 'Raleway', sans-serif;
   .inputs_reservations select {
     margin: 0 15px 0 15px;
     padding: 10px 35px 10px 35px;
-    font-size: $font-size-medium;
+    font-size: 18px;
     transition: transform 0.3s ease;
   }
 
@@ -122,7 +124,7 @@ $font-raleway: 'Raleway', sans-serif;
   .inputs_reservations input {
     margin: 0 15px 0 15px;
     padding: 9px 60px 8px 60px;
-    font-size: $font-size-medium;
+    font-size: 18px;
     transition: transform 0.3s ease;
   }
 
@@ -137,7 +139,7 @@ $font-raleway: 'Raleway', sans-serif;
   .inputs_reservations a {
     text-align: center;
     padding: 6px 90px 6px 90px;
-    font-size: $font-size-medium;
+    font-size: 18px;
   }
 }
 
@@ -164,7 +166,7 @@ $font-raleway: 'Raleway', sans-serif;
 }
 
 .contenedor_etiqueta_reservation-elementos {
-  background-color: white;
+  background-color: $color-white;
   display: flex;
   width: 90%;
   height: 166px;
@@ -182,7 +184,7 @@ $font-raleway: 'Raleway', sans-serif;
 
   & h4 {
     padding: 8px 0 0 10px;
-    font-size: $font-size-medium;
+    font-size: 18px;
     font-weight: 400;
     font-style: italic;
     color: rgb(96, 117, 91);
@@ -198,52 +200,52 @@ $font-raleway: 'Raleway', sans-serif;
   }
 
 .contenido_etiqueta_subelementos {
-  border-left: 1px solid black;
+  border-left: 1px solid $color-black;
   margin: 32px 0 25px 10px;
   display: flex;
   flex-direction: column;
   width: 100%;
 
   & h5 {
-    font-size: $font-size-small;
+    font-size: 13px;
     padding: 0 0 0 5px;
     margin: 6px 0 0 0;
-    color: black;
+    color: $color-black;
   }
 
   & a {
-    font-size: $font-size-small;
+    font-size: 13px;
     padding: 0 20px 0 5px;
     color: rgb(119, 146, 113);
     margin: 0;
     width: 70%;
 
     &:hover {
-      color: rgb(0, 0, 0);
+      color: $color-black;
     }
   }
 
   & p {
     text-align: end;
     margin: 14px 10px 5px 0;
-    color: $color-primary;
+    color: $color-titulos;
   }
 }
 
 #subelemento-boton {
   text-align: center;
-  border: 1px solid white;
+  border: 1px solid $color-white;
   padding: 5px 0 5px 0px;
   max-width: 60%;
   margin: 0 30px 0 30px;
   border-radius: 5px;
   background: rgb(119, 146, 113);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  color: white;
+  color: $color-white;
 
   &:hover {
     background-color: $color-secondary;
-    color: white;
+    color: $color-white;
   }
 }
 
@@ -259,7 +261,7 @@ $font-raleway: 'Raleway', sans-serif;
   .contenedor_etiqueta_reservation h3 {
     margin: 20px 800px 0 20px;
     padding: 0 0 7px 30px;
-    font-size: $font-size-large;
+    font-size: 24px;
   }
 
   .contenedor_etiqueta_reservation-elementos {
@@ -270,7 +272,7 @@ $font-raleway: 'Raleway', sans-serif;
 
   .contenedor_etiqueta_reservation-elementos h4 {
     position: relative;
-    font-size: $font-size-large;
+    font-size: 24px;
     left: 260px;
     top: 5px;
   }
@@ -298,7 +300,7 @@ $font-raleway: 'Raleway', sans-serif;
   .contenido_etiqueta_subelementos p {
     text-align: end;
     margin: 0 10px 0px 0;
-    font-size: $font-size-large;
+    font-size: 24px;
   }
 }
 

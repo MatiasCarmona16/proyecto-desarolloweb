@@ -1,11 +1,11 @@
-// Variables header
+// Variables header //
 $color-header-green: rgb(196,232,191);
 $color-header-green-gradient: linear-gradient(180deg, rgba(196,232,191,1) 4%, rgba(162,218,155,1) 32%, rgba(162,218,155,1) 70%, rgba(196,232,191,1) 87%);
 $color-white: white;
-$color-hover-green: rgb(159, 182, 161);
+$color-hover-green: rgb(170, 228, 176);
 $font-raleway: 'Raleway', sans-serif;
 
-// Header styles
+// Header styles //
 .header_background-secciones {
   background: rgba(92, 146, 90, 0.685);
   padding: 0px;
@@ -53,7 +53,7 @@ header {
       transition: transform 0.3s ease;
 
       &:hover {
-        color: white;
+        color: $color-white;
         transform: scale(1.1);
       }
     }
