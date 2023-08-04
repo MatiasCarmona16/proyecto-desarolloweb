@@ -174,13 +174,13 @@ hr {
 }
 
 #pagina_rooms {
-  background: rgb(204, 234, 186);
-  background: linear-gradient(180deg, rgba(204, 234, 186, 0.9220063025) 1%, rgb(255, 255, 255) 17%, rgb(255, 255, 255) 75%, rgba(199, 232, 179, 0.9108018207) 81%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 84%, rgb(197, 232, 192) 93%);
 }
 
 #body_service_background {
-  background: rgb(199, 232, 179);
-  background: linear-gradient(180deg, rgba(199, 232, 179, 0.6825105042) 3%, rgba(255, 255, 255, 0.7805497199) 8%, rgba(255, 255, 255, 0.7861519608) 83%, rgba(199, 232, 179, 0.5256477591) 87%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 88%, rgb(197, 232, 192) 96%);
 }
 
 #body_reservations_background {
@@ -956,8 +956,6 @@ hr {
 /*-------------------SERVICES: Contenido Gym / version: TABLET MOBILE Y DESKTOP----------------------*/
 .contenido_secundario-gym {
   margin: 50px 0 0 0;
-  background: rgba(255, 255, 255, 0.7805497199);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7805497199) 25%, rgba(199, 232, 179, 0.6825105042) 64%, rgba(199, 232, 179, 0.5256477591) 96%, rgba(255, 255, 255, 0.7861519608) 99%);
 }
 .contenido_secundario-gym h3 {
   text-align: center;
@@ -987,6 +985,9 @@ hr {
   }
 }
 @media (min-width: 1200px) {
+  .contenido_secundario-gym {
+    margin: 50px 0 150px 0;
+  }
   .contenido_secundario-gym h3 {
     font-size: 25px;
     padding: 12px;

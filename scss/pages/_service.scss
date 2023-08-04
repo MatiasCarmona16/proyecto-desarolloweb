@@ -49,8 +49,6 @@
 
 .contenido_secundario-gym {
     margin: 50px 0 0 0;
-    background: $background-color-1;
-    background: linear-gradient(180deg, $background-color-1 25%, $background-color-2 64%, $background-color-3 96%, $background-color-4 99%);
 
     & h3 {
         text-align: center;
@@ -84,6 +82,9 @@
 }
 
 @media (min-width: 1200px) {
+    .contenido_secundario-gym {
+        margin: 50px 0 150px 0;
+    }
     .contenido_secundario-gym h3 {
         font-size: 25px;
         padding: 12px;
